@@ -1,11 +1,13 @@
 {
     "entity_types": [
-        "minecraft:zombie"
+        "minecraft:zombie",
+        "minecraft:husk"
     ],
     "powers": [
         "danilcus:mobs/random_power_provider/shared/armor/event",
         "danilcus:mobs/random_power_provider/zombie/mainhand/event",
         "danilcus:mobs/random_power_provider/zombie/natural/event",
-        "danilcus:mobs/random_power_provider/zombie/offhand/event"
+        "danilcus:mobs/random_power_provider/zombie/offhand/event",
+        "danilcus:team"
     ]
 }

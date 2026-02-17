@@ -3,6 +3,7 @@
         "minecraft:phantom"
     ],
     "powers": [
-        "danilcus:mobs/natural/flying_grab"
+        "danilcus:mobs/natural/flying_grab",
+        "danilcus:team"
     ]
 }
