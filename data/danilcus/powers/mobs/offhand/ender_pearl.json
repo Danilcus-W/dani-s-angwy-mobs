@@ -41,7 +41,7 @@
 						"type": "origins:fire_projectile",
 						"entity_type": "minecraft:ender_pearl",
 						"count": 1,
-						"speed": 1.0
+						"speed": 0.9
 					},
 					{
 						"type": "origins:play_sound",
