@@ -60,12 +60,5 @@
 				"command": "item modify entity @s weapon.mainhand danilcus:randomize_modules"
 			}
 		}
-	},
-	"Suicide": {
-		"type": "origins:action_on_callback",
-		"entity_action_gained": {
-			"type": "origins:remove_power",
-			"power": "*:*"
-		}
 	}
 }

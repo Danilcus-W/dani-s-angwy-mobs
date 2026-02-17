@@ -3,9 +3,9 @@
         "minecraft:zombie"
     ],
     "powers": [
-        "danilcus:mobs/random_power/shared/armor/event",
-        "danilcus:mobs/random_power/zombie/mainhand/event",
-        "danilcus:mobs/random_power/zombie/natural/event",
-        "danilcus:mobs/random_power/zombie/offhand/event"
+        "danilcus:mobs/random_power_provider/shared/armor/event",
+        "danilcus:mobs/random_power_provider/zombie/mainhand/event",
+        "danilcus:mobs/random_power_provider/zombie/natural/event",
+        "danilcus:mobs/random_power_provider/zombie/offhand/event"
     ]
 }

@@ -19,37 +19,27 @@
 					},
 					{
 						"element": {
-							"type": "origins:grant_power",
-							"power": "danilcus:mobs/mainhand/weapon_t2",
-							"source": "apoli:global"
+							"type": "origins:add_power",
+							"power": "danilcus:mobs/offhand/wind_charge"
 						},
-						"weight": 10
+						"weight": 3
 					},
 					{
 						"element": {
-							"type": "origins:grant_power",
-							"power": "danilcus:mobs/mainhand/tnt",
-							"source": "apoli:global"
+							"type": "origins:add_power",
+							"power": "danilcus:mobs/offhand/ender_pearl"
 						},
-						"weight": 1
+						"weight": 3
 					},
 					{
 						"element": {
-							"type": "origins:grant_power",
-							"power": "danilcus:mobs/mainhand/lighter",
-							"source": "apoli:global"
+							"type": "origins:add_power",
+							"power": "danilcus:mobs/offhand/ladder"
 						},
 						"weight": 1
 					}
 				]
 			}
 		}
-	},
-	"Suicide": {
-		"type": "origins:action_on_callback",
-		"entity_action_gained": {
-			"type": "origins:remove_power",
-			"power": "*:*"
-		}
-	}
+    }
 }

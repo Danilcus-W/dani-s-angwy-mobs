@@ -15,23 +15,31 @@
 						"element": {
 							"type": "origins:nothing"
 						},
+						"weight": 10
+					},
+					{
+						"element": {
+							"type": "origins:add_power",
+							"power": "danilcus:mobs/mainhand/weapon_t2"
+						},
+						"weight": 10
+					},
+					{
+						"element": {
+							"type": "origins:add_power",
+							"power": "danilcus:mobs/mainhand/tnt"
+						},
 						"weight": 1
 					},
 					{
 						"element": {
-							"type": "origins:nothing"
+							"type": "origins:add_power",
+							"power": "danilcus:mobs/mainhand/lighter"
 						},
 						"weight": 1
 					}
 				]
 			}
-		}
-	},
-	"Suicide": {
-		"type": "origins:action_on_callback",
-		"entity_action_gained": {
-			"type": "origins:remove_power",
-			"power": "*:*"
 		}
 	}
 }
