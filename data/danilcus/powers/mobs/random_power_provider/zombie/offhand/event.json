@@ -19,22 +19,25 @@
 					},
 					{
 						"element": {
-							"type": "apoli:add_power",
-							"power": "danilcus:mobs/offhand/wind_charge"
+							"type": "origins:grant_power",
+							"power": "danilcus:mobs/offhand/wind_charge",
+							"source": "*:random_power"
 						},
 						"weight": 3
 					},
 					{
 						"element": {
-							"type": "apoli:add_power",
-							"power": "danilcus:mobs/offhand/ender_pearl"
+							"type": "origins:grant_power",
+							"power": "danilcus:mobs/offhand/ender_pearl",
+							"source": "*:random_power"
 						},
 						"weight": 3
 					},
 					{
 						"element": {
-							"type": "apoli:add_power",
-							"power": "danilcus:mobs/offhand/ladder"
+							"type": "origins:grant_power",
+							"power": "danilcus:mobs/offhand/ladder",
+							"source": "*:random_power"
 						},
 						"weight": 1
 					}

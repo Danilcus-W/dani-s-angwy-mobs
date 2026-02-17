@@ -15,7 +15,7 @@
 						"element": {
 							"type": "origins:grant_power",
 							"power": "danilcus:mobs/armor/vanilla",
-							"source": "apoli:global"
+							"source": "*:random_power"
 						},
 						"weight": 20
 					},
@@ -23,7 +23,7 @@
 						"element": {
 							"type": "origins:grant_power",
 							"power": "danilcus:mobs/armor/vanilla",
-							"source": "apoli:global"
+							"source": "*:random_power"
 						},
 						"weight": 1
 					}
