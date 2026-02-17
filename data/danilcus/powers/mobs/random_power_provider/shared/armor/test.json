@@ -1,42 +1,28 @@
 {
 	"type": "origins:multiple",
-	"Randomize": {
+	"RandomizeHelmet": {
 		"type": "origins:action_on_callback",
 		"entity_action_gained": {
 			"type": "origins:if_else",
 			"condition": {
 				"type": "origins:nbt",
-				"nbt": "{Tags:['event']}"
+				"nbt": "{}"
 			},
 			"if_action":{
 				"type": "origins:choice",
 				"actions": [
 					{
 						"element": {
-							"type": "origins:nothing"
-						},
-						"weight": 4
-					},
-					{
-						"element": {
 							"type": "origins:grant_power",
-							"power": "danilcus:mobs/mainhand/weapon_t2",
+							"power": "danilcus:mobs/armor/vanilla",
 							"source": "*:random_power"
 						},
-						"weight": 10
+						"weight": 20
 					},
 					{
 						"element": {
 							"type": "origins:grant_power",
-							"power": "danilcus:mobs/mainhand/tnt",
-							"source": "*:random_power"
-						},
-						"weight": 1
-					},
-					{
-						"element": {
-							"type": "origins:grant_power",
-							"power": "danilcus:mobs/mainhand/lighter",
+							"power": "danilcus:mobs/armor/vanilla",
 							"source": "*:random_power"
 						},
 						"weight": 1

@@ -4,10 +4,10 @@
         "minecraft:husk"
     ],
     "powers": [
-        "danilcus:mobs/random_power_provider/shared/armor/event",
-        "danilcus:mobs/random_power_provider/zombie/mainhand/event",
-        "danilcus:mobs/random_power_provider/zombie/natural/event",
-        "danilcus:mobs/random_power_provider/zombie/offhand/event",
+        "danilcus:mobs/random_power_provider/shared/armor/test",
+        "danilcus:mobs/random_power_provider/zombie/mainhand/test",
+        "danilcus:mobs/random_power_provider/zombie/natural/test",
+        "danilcus:mobs/random_power_provider/zombie/offhand/test",
         "danilcus:team"
     ]
 }

@@ -18,7 +18,7 @@
 						"type": "origins:execute_command",
 						"command": "enchant @s minecraft:flame 1"
 					},
-					"chance": 0.10
+					"chance": 0.2
 				},
 				{
 					"type": "origins:chance",
@@ -26,7 +26,7 @@
 						"type": "origins:execute_command",
 						"command": "enchant @s minecraft:punch 2"
 					},
-					"chance": 0.15
+					"chance": 0.35
 				},
 				{
 					"type": "origins:chance",
@@ -34,7 +34,7 @@
 						"type": "origins:execute_command",
 						"command": "enchant @s minecraft:multishot 1"
 					},
-					"chance": 0.10
+					"chance": 0.2
 				}
 			]
 		}

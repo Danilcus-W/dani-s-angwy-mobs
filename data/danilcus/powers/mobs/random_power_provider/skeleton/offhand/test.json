@@ -6,7 +6,7 @@
 			"type": "origins:if_else",
 			"condition": {
 				"type": "origins:nbt",
-				"nbt": "{Tags:['event']}"
+				"nbt": "{}"
 			},
 			"if_action":{
 				"type": "origins:choice",
@@ -15,18 +15,26 @@
 						"element": {
 							"type": "origins:nothing"
 						},
-						"weight": 20
+						"weight": 10
 					},
 					{
 						"element": {
 							"type": "origins:grant_power",
-							"power": "danilcus:mobs/natural/slime_infection",
+							"power": "danilcus:mobs/offhand/wind_charge_strafe",
 							"source": "*:random_power"
 						},
-						"weight": 1
+						"weight": 3
+					},
+					{
+						"element": {
+							"type": "origins:grant_power",
+							"power": "danilcus:mobs/offhand/ender_pearl",
+							"source": "*:random_power"
+						},
+						"weight": 3
 					}
 				]
 			}
 		}
-	}
+    }
 }

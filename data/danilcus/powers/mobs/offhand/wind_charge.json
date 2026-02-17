@@ -51,8 +51,8 @@
 					}
 				]
 			},
-			"chance": 0.7
+			"chance": 0.4
 		},
-		"interval": 60
+		"interval": 30
 	}
 }

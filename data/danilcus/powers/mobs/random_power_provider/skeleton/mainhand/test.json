@@ -1,12 +1,12 @@
 {
 	"type": "origins:multiple",
-	"RandomizeHelmet": {
+	"Randomize": {
 		"type": "origins:action_on_callback",
 		"entity_action_gained": {
 			"type": "origins:if_else",
 			"condition": {
 				"type": "origins:nbt",
-				"nbt": "{Tags:['event']}"
+				"nbt": "{}"
 			},
 			"if_action":{
 				"type": "origins:choice",
@@ -14,18 +14,10 @@
 					{
 						"element": {
 							"type": "origins:grant_power",
-							"power": "danilcus:mobs/armor/vanilla",
+							"power": "danilcus:mobs/mainhand/bow",
 							"source": "*:random_power"
 						},
-						"weight": 20
-					},
-					{
-						"element": {
-							"type": "origins:grant_power",
-							"power": "danilcus:mobs/armor/vanilla",
-							"source": "*:random_power"
-						},
-						"weight": 1
+						"weight": 10
 					}
 				]
 			}

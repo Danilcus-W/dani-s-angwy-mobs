@@ -5,9 +5,9 @@
         "minecraft:parched"
     ],
     "powers": [
-        "danilcus:mobs/random_power_provider/shared/armor/event",
-        "danilcus:mobs/random_power_provider/skeleton/offhand/event",
-        "danilcus:mobs/mainhand/bow",
+        "danilcus:mobs/random_power_provider/shared/armor/test",
+        "danilcus:mobs/random_power_provider/skeleton/offhand/test",
+        "danilcus:mobs/random_power_provider/skeleton/mainhand/test",
         "danilcus:team"
     ]
 }

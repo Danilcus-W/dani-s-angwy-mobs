@@ -6,7 +6,7 @@
 			"type": "origins:if_else",
 			"condition": {
 				"type": "origins:nbt",
-				"nbt": "{Tags:['event']}"
+				"nbt": "{}"
 			},
 			"if_action":{
 				"type": "origins:choice",
@@ -15,28 +15,28 @@
 						"element": {
 							"type": "origins:nothing"
 						},
+						"weight": 4
+					},
+					{
+						"element": {
+							"type": "origins:grant_power",
+							"power": "danilcus:mobs/mainhand/weapon_t2",
+							"source": "*:random_power"
+						},
 						"weight": 10
 					},
 					{
 						"element": {
 							"type": "origins:grant_power",
-							"power": "danilcus:mobs/offhand/wind_charge",
+							"power": "danilcus:mobs/mainhand/tnt",
 							"source": "*:random_power"
 						},
-						"weight": 3
+						"weight": 1
 					},
 					{
 						"element": {
 							"type": "origins:grant_power",
-							"power": "danilcus:mobs/offhand/ender_pearl",
-							"source": "*:random_power"
-						},
-						"weight": 3
-					},
-					{
-						"element": {
-							"type": "origins:grant_power",
-							"power": "danilcus:mobs/offhand/ladder",
+							"power": "danilcus:mobs/mainhand/lighter",
 							"source": "*:random_power"
 						},
 						"weight": 1
@@ -44,5 +44,5 @@
 				]
 			}
 		}
-    }
+	}
 }
