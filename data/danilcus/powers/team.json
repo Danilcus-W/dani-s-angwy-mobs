@@ -5,7 +5,7 @@
 		"type": "origins:if_else",
 		"condition": {
 			"type": "origins:nbt",
-			"nbt": "{}"
+			"nbt": "{Tags:{'event'}}"
 		},
 		"if_action": {
 			"type": "origins:execute_command",
