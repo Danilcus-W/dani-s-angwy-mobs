@@ -19,21 +19,21 @@
 					},
 					{
 						"element": {
-							"type": "origins:add_power",
+							"type": "apoli:add_power",
 							"power": "danilcus:mobs/mainhand/weapon_t2"
 						},
 						"weight": 10
 					},
 					{
 						"element": {
-							"type": "origins:add_power",
+							"type": "apoli:add_power",
 							"power": "danilcus:mobs/mainhand/tnt"
 						},
 						"weight": 1
 					},
 					{
 						"element": {
-							"type": "origins:add_power",
+							"type": "apoli:add_power",
 							"power": "danilcus:mobs/mainhand/lighter"
 						},
 						"weight": 1
