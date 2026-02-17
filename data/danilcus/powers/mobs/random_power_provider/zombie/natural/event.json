@@ -15,11 +15,13 @@
 						"element": {
 							"type": "origins:nothing"
 						},
-						"weight": 1
+						"weight": 20
 					},
 					{
 						"element": {
-							"type": "origins:nothing"
+							"type": "origins:grant_power",
+							"power": "danilcus:mobs/natural/slime_infection",
+							"source": "*:random_power"
 						},
 						"weight": 1
 					}
