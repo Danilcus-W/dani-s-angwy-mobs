@@ -1,0 +1,51 @@
+{
+	"type": "origins:multiple",
+	"Item":{
+		"type": "origins:action_on_callback",
+		"entity_action_gained": {
+			"type": "origins:execute_command",
+			"command": "item replace entity @s weapon.mainhand with minecraft:flint_and_steel"
+		}
+	},
+	"Tick": {
+		"type": "origins:action_over_time",
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:predicate",
+					"predicate": "danilcus:ai_target"
+				},
+				{
+					"type": "origins:raycast",
+					"space": "local",
+					"shape_type": "collider",
+					"block": true,
+					"entity": false,
+					"block_distance": 2.0
+				}
+			]
+		},
+		"entity_action": {
+			"type": "origins:chance",
+			"action": {
+				"type": "origins:and",
+				"actions": [
+					{
+						"type": "origins:execute_command",
+						"command": "setblock ^ ^1 ^0.5 minecraft:fire keep"
+					},
+					{
+						"type": "origins:play_sound",
+						"sound": "minecraft:item.flintandsteel.use"
+					},
+					{
+						"type": "origins:swing_hand"
+					}
+				]
+			},
+			"chance": 0.9
+		},
+		"interval": 20
+	}
+}

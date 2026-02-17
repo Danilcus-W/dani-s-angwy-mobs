@@ -1,0 +1,71 @@
+{
+	"type": "origins:multiple",
+	"Item":{
+		"type": "origins:action_on_callback",
+		"entity_action_gained": {
+			"type": "origins:choice",
+			"actions": [
+				{
+					"element": {
+						"type": "origins:execute_command",
+						"command": "item replace entity @s weapon.mainhand with minecraft:wooden_sword"
+					},
+					"weight": 1
+				},
+				{
+					"element": {
+						"type": "origins:execute_command",
+						"command": "item replace entity @s weapon.mainhand with minecraft:wooden_axe"
+					},
+					"weight": 1
+				},
+				{
+					"element": {
+						"type": "origins:execute_command",
+						"command": "item replace entity @s weapon.mainhand with minecraft:wooden_spear"
+					},
+					"weight": 1
+				},
+				{
+					"element": {
+						"type": "origins:execute_command",
+						"command": "item replace entity @s weapon.mainhand with minecraft:golden_sword"
+					},
+					"weight": 1
+				},
+				{
+					"element": {
+						"type": "origins:execute_command",
+						"command": "item replace entity @s weapon.mainhand with minecraft:golden_axe"
+					},
+					"weight": 1
+				},
+				{
+					"element": {
+						"type": "origins:execute_command",
+						"command": "item replace entity @s weapon.mainhand with minecraft:copper_spear"
+					},
+					"weight": 1
+				}
+			]
+		}
+	},
+	"RandomizeModules":{
+		"type": "origins:action_on_callback",
+		"entity_action_gained": {
+			"type": "origins:delay",
+			"ticks": 1,
+			"action": {
+				"type": "origins:execute_command",
+				"command": "item modify entity @s weapon.mainhand danilcus:randomize_modules"
+			}
+		}
+	},
+	"Suicide": {
+		"type": "origins:action_on_callback",
+		"entity_action_gained": {
+			"type": "origins:remove_power",
+			"power": "*:*"
+		}
+	}
+}

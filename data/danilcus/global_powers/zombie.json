@@ -1,0 +1,11 @@
+{
+    "entity_types": [
+        "minecraft:zombie"
+    ],
+    "powers": [
+        "danilcus:mobs/random_power/shared/armor/event",
+        "danilcus:mobs/random_power/zombie/mainhand/event",
+        "danilcus:mobs/random_power/zombie/natural/event",
+        "danilcus:mobs/random_power/zombie/offhand/event"
+    ]
+}

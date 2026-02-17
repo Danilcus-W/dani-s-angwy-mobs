@@ -1,0 +1,36 @@
+{
+	"type": "origins:multiple",
+	"Tick": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:chance",
+			"action": {
+				"type": "origins:and",
+				"actions": [
+					{
+						"type": "origins:execute_command",
+						"command": "tp @e[type=#danilcus:flying_grab,distance=..3,sort=nearest,limit=1] ~ ~-0.8 ~"
+					},
+					{
+						"type": "origins:selector_action",
+						"selector": "@e[type=#danilcus:flying_grab,distance=..3,sort=nearest,limit=1]",
+						"bientity_action": {
+							"type": "origins:target_action",
+							"action": {
+								"type": "origins:add_velocity",
+								"x": 0.0,
+								"y": 0.0,
+								"z": 0.0,
+								"client": true,
+								"server": true,
+								"set": true
+							}
+						}
+					}
+				]
+			},
+			"chance": 0.90
+		},
+		"interval": 1
+	}
+}

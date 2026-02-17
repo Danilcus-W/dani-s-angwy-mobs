@@ -1,0 +1,41 @@
+{
+	"type": "origins:multiple",
+	"RandomizeHelmet": {
+		"type": "origins:action_on_callback",
+		"entity_action_gained": {
+			"type": "origins:if_else",
+			"condition": {
+				"type": "origins:nbt",
+				"nbt": "{Tags: ['event']}"
+			},
+			"if_action":{
+				"type": "origins:choice",
+				"actions": [
+					{
+						"element": {
+							"type": "origins:grant_power",
+							"power": "danilcus:mobs/armor/vanilla",
+							"source": "apoli:global"
+						},
+						"weight": 20
+					},
+					{
+						"element": {
+							"type": "origins:grant_power",
+							"power": "danilcus:mobs/armor/vanilla",
+							"source": "apoli:global"
+						},
+						"weight": 1
+					}
+				]
+			}
+		}
+	},
+	"Suicide": {
+		"type": "origins:action_on_callback",
+		"entity_action_gained": {
+			"type": "origins:remove_power",
+			"power": "*:*"
+		}
+	}
+}

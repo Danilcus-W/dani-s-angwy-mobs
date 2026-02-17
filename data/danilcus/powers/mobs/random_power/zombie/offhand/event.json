@@ -1,0 +1,55 @@
+{
+	"type": "origins:multiple",
+	"Randomize": {
+		"type": "origins:action_on_callback",
+		"entity_action_gained": {
+			"type": "origins:if_else",
+			"condition": {
+				"type": "origins:nbt",
+				"nbt": "{Tags: ['event']}"
+			},
+			"if_action":{
+				"type": "origins:choice",
+				"actions": [
+					{
+						"element": {
+							"type": "origins:nothing"
+						},
+						"weight": 10
+					},
+					{
+						"element": {
+							"type": "origins:grant_power",
+							"power": "danilcus:mobs/offhand/wind_charge",
+							"source": "apoli:global"
+						},
+						"weight": 3
+					},
+					{
+						"element": {
+							"type": "origins:grant_power",
+							"power": "danilcus:mobs/offhand/ender_pearl",
+							"source": "apoli:global"
+						},
+						"weight": 3
+					},
+					{
+						"element": {
+							"type": "origins:grant_power",
+							"power": "danilcus:mobs/offhand/ladder",
+							"source": "apoli:global"
+						},
+						"weight": 1
+					}
+				]
+			}
+		}
+    },
+	"Suicide": {
+		"type": "origins:action_on_callback",
+		"entity_action_gained": {
+			"type": "origins:remove_power",
+			"power": "*:*"
+		}
+	}
+}

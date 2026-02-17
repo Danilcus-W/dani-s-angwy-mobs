@@ -1,0 +1,6 @@
+{
+	"function": "miapi:material_swap",
+	"lower_bounds": -3.0,
+	"upper_bounds": 3.0,
+	"chance": 0.9
+}

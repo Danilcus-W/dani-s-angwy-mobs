@@ -1,0 +1,8 @@
+{
+    "pack": {
+        "description": "meow",
+        "pack_format": 48,
+        "min_format": 47,
+        "max_format": 49
+    }
+}

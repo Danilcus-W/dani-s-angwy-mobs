@@ -1,0 +1,55 @@
+{
+	"type": "origins:multiple",
+	"Randomize": {
+		"type": "origins:action_on_callback",
+		"entity_action_gained": {
+			"type": "origins:if_else",
+			"condition": {
+				"type": "origins:nbt",
+				"nbt": "{Tags: ['event']}"
+			},
+			"if_action":{
+				"type": "origins:choice",
+				"actions": [
+					{
+						"element": {
+							"type": "origins:nothing"
+						},
+						"weight": 10
+					},
+					{
+						"element": {
+							"type": "origins:grant_power",
+							"power": "danilcus:mobs/mainhand/weapon_t2",
+							"source": "apoli:global"
+						},
+						"weight": 10
+					},
+					{
+						"element": {
+							"type": "origins:grant_power",
+							"power": "danilcus:mobs/mainhand/tnt",
+							"source": "apoli:global"
+						},
+						"weight": 1
+					},
+					{
+						"element": {
+							"type": "origins:grant_power",
+							"power": "danilcus:mobs/mainhand/lighter",
+							"source": "apoli:global"
+						},
+						"weight": 1
+					}
+				]
+			}
+		}
+	},
+	"Suicide": {
+		"type": "origins:action_on_callback",
+		"entity_action_gained": {
+			"type": "origins:remove_power",
+			"power": "*:*"
+		}
+	}
+}

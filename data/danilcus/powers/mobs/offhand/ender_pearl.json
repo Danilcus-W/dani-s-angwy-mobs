@@ -1,0 +1,61 @@
+{
+	"type": "origins:multiple",
+	"Item":{
+		"type": "origins:action_on_callback",
+		"entity_action_gained": {
+			"type": "origins:execute_command",
+			"command": "item replace entity @s weapon.offhand with minecraft:ender_pearl"
+		}
+	},
+	"Tick": {
+		"type": "origins:action_over_time",
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:predicate",
+					"predicate": "danilcus:ai_target"
+				},
+				{
+					"type": "origins:raycast",
+					"space": "local",
+					"entity": true,
+					"block": true,
+					"entity_distance": 32.0,
+					"match_bientity_condition": {
+						"type": "origins:attack_target"
+					}
+				}
+			]
+		},
+		"entity_action": {
+			"type": "origins:chance",
+			"action": {
+				"type": "origins:and",
+				"actions": [
+					{
+						"type": "origins:execute_command",
+						"command": "tp @s ~ ~ ~ ~ ~-25"
+					},
+					{
+						"type": "origins:fire_projectile",
+						"entity_type": "minecraft:ender_pearl",
+						"count": 1,
+						"speed": 1.0
+					},
+					{
+						"type": "origins:play_sound",
+						"sound": "minecraft:entity.ender_pearl.throw",
+						"volume": 1.0,
+						"pitch": 0.5
+					},
+					{
+						"type": "origins:swing_hand"
+					}
+				]
+			},
+			"chance": 0.8
+		},
+		"interval": 100
+	}
+}

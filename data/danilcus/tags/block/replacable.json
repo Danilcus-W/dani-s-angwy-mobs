@@ -1,0 +1,12 @@
+{
+	"values": [
+    	"#minecraft:replaceable",
+    	"#minecraft:wooden_buttons",
+    	"#minecraft:wool_carpets",
+    	"#minecraft:all_signs",
+    	"#minecraft:candles",
+    	"#minecraft:flowers",
+    	"#minecraft:leaves",
+    	"#minecraft:crops"
+	]
+}
