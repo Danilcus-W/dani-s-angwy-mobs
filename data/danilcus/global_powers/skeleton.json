@@ -1,0 +1,13 @@
+{
+    "entity_types": [
+        "minecraft:skeleton",
+        "minecraft:stray",
+        "minecraft:parched"
+    ],
+    "powers": [
+        "danilcus:mobs/random_power_provider/shared/armor/event",
+        "danilcus:mobs/random_power_provider/skeleton/offhand/event",
+        "danilcus:mobs/mainhand/bow",
+        "danilcus:team"
+    ]
+}
