@@ -9,68 +9,71 @@
 	},
 	"Tick": {
 		"type": "origins:action_over_time",
-		"condition": {
-			"type": "origins:and",
-			"conditions": [
-				{
-					"type": "origins:predicate",
-					"predicate": "danilcus:ai_target"
-				},
-				{
-					"type": "origins:raycast",
-					"space": "local_horizontal",
-					"shape_type": "collider",
-					"block": true,
-					"entity": true,
-					"block_distance": 1.0,
-					"entity_distance": 2.0,
-					"match_bientity_condition": {
-						"type": "origins:target_condition",
-						"condition": {
-							"type": "origins:nbt",
-							"nbt": "{}",
-							"inverted": true
-						}
-					}
-				}
-			]
-		},
+		"interval": 20,
 		"entity_action": {
 			"type": "origins:chance",
+			"chance": 0.9,
 			"action": {
-				"type": "origins:and",
-				"actions": [
-					{
-						"type": "origins:execute_command",
-						"command": "summon minecraft:tnt ^ ^0.8 ^0.2 {fuse:80}"
-					},
-					{
-						"type": "origins:execute_command",
-						"command": "item replace entity @s weapon.mainhand with minecraft:air"
-					},
-					{
-						"type": "origins:play_sound",
-						"sound": "minecraft:block.grass.place",
-						"volume": 1.0,
-						"pitch": 0.75
-					},
-					{
-						"type": "origins:play_sound",
-						"sound": "minecraft:entity.tnt.primed",
-						"volume": 1.0
-					},
-					{
-						"type": "origins:swing_hand"
-					},
-					{
-						"type": "origins:revoke_power",
-						"power": "*:*",
-						"source": "*:random_power"
-					}
-				]
-			},
-			"chance": 0.9
-		},
-		"interval": 20
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:predicate",
+							"predicate": "danilcus:ai_target"
+						},
+						{
+							"type": "origins:raycast",
+							"space": "local_horizontal",
+							"shape_type": "collider",
+							"block": true,
+							"entity": true,
+							"block_distance": 1.0,
+							"entity_distance": 2.0,
+							"match_bientity_condition": {
+								"type": "origins:target_condition",
+								"condition": {
+									"type": "origins:nbt",
+									"nbt": "{}",
+									"inverted": true
+								}
+							}
+						}
+					]
+				},
+				"if_action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "summon minecraft:tnt ^ ^0.8 ^0.2 {fuse:80}"
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "item replace entity @s weapon.mainhand with minecraft:air"
+						},
+						{
+							"type": "origins:play_sound",
+							"sound": "minecraft:block.grass.place",
+							"volume": 1.0,
+							"pitch": 0.75
+						},
+						{
+							"type": "origins:play_sound",
+							"sound": "minecraft:entity.tnt.primed",
+							"volume": 1.0
+						},
+						{
+							"type": "origins:swing_hand"
+						},
+						{
+							"type": "origins:revoke_power",
+							"power": "*:*",
+							"source": "*:random_power"
+						}
+					]
+				}
+			}
+		}
 	}
 }
