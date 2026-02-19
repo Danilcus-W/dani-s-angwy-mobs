@@ -1,0 +1,115 @@
+{
+	"type": "origins:multiple",
+	"Item":{
+		"type": "origins:action_on_callback",
+		"entity_action_gained": {
+			"type": "origins:execute_command",
+			"command": "item replace entity @s weapon.offhand with minecraft:potion[minecraft:potion_contents={potion:'strong_harming'}]"
+		}
+	},
+	"Tick": {
+		"type": "origins:action_over_time",
+		"interval": 50,
+		"entity_action": {
+			"type": "origins:chance",
+			"chance": 1.0,
+			"action": {
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:relative_health",
+							"comparison": "<=",
+							"compare_to": 0.8
+						},
+						{
+							"type": "origins:resource",
+							"resource": "*:*_Cooldown",
+							"comparison": "<=",
+							"compare_to": 0
+						}
+					]
+				},
+				"if_action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:trigger_cooldown",
+							"power": "*:*_Cooldown"
+						},
+						{
+							"type": "origins:play_sound",
+							"sound": "minecraft:entity.generic.drink"
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 4,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "minecraft:entity.generic.drink"
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 8,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "minecraft:entity.generic.drink"
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 12,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "minecraft:entity.generic.drink"
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 16,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "minecraft:entity.generic.drink"
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 20,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "minecraft:entity.generic.drink"
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 24,
+							"action": {
+								"type": "origins:and",
+								"actions": [
+									{
+										"type": "origins:play_sound",
+										"sound": "minecraft:entity.generic.drink"
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "effect give @s minecraft:instant_damage 1 1"
+									},
+									{
+										"type": "origins:swing_hand",
+										"hand": "OFF_HAND"
+									}
+								]
+							}
+						}
+					]
+				}
+			}
+		}
+	},
+	"Cooldown": {
+		"type": "origins:cooldown",
+		"cooldown": 300
+	}
+}

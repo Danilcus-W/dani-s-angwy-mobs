@@ -1,0 +1,55 @@
+{
+	"type": "origins:multiple",
+	"Death": {
+		"type": "origins:action_when_hit",
+		"cooldown": 1,
+		"damage_condition": {
+			"type": "origins:in_tag",
+			"tag": "minecraft:is_fire",
+			"inverted": true
+		},
+		"bientity_action": {
+			"type": "origins:target_action",
+			"action": {
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:health",
+					"comparison": "<=",
+					"compare_to": 0
+				},
+				"if_action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "summon minecraft:slime ^ ^ ^-0.1 {Size:1}"
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "summon minecraft:slime ^0.1 ^ ^0.1 {Size:1}"
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "summon minecraft:slime ^-0.1 ^ ^0.1 {Size:1}"
+						}
+					]
+				}
+			}
+		}
+	},
+	"Particles": {
+		"type": "origins:particle",
+		"particle": "minecraft:item_slime",
+		"frequency": 3,
+		"count": 2,
+		"speed": 0,
+		"spread": {
+			"x": 0.2,
+			"y": 0.3,
+			"z": 0.2
+		},
+		"offset_y": 1,
+		"visible_in_first_person": true,
+		"visible_while_invisible": false
+	}
+}

@@ -9,53 +9,56 @@
 	},
 	"Tick": {
 		"type": "origins:action_over_time",
-		"condition": {
-			"type": "origins:and",
-			"conditions": [
-				{
-					"type": "origins:predicate",
-					"predicate": "danilcus:ai_target"
-				},
-				{
-					"type": "origins:raycast",
-					"space": "local",
-					"entity": true,
-					"block": true,
-					"entity_distance": 32.0,
-					"match_bientity_condition": {
-						"type": "origins:attack_target"
-					}
-				}
-			]
-		},
+		"interval": 100,
 		"entity_action": {
 			"type": "origins:chance",
+			"chance": 0.8,
 			"action": {
-				"type": "origins:and",
-				"actions": [
-					{
-						"type": "origins:execute_command",
-						"command": "tp @s ~ ~ ~ ~ ~-25"
-					},
-					{
-						"type": "origins:fire_projectile",
-						"entity_type": "minecraft:ender_pearl",
-						"count": 1,
-						"speed": 0.9
-					},
-					{
-						"type": "origins:play_sound",
-						"sound": "minecraft:entity.ender_pearl.throw",
-						"volume": 1.0,
-						"pitch": 0.5
-					},
-					{
-						"type": "origins:swing_hand"
-					}
-				]
-			},
-			"chance": 0.8
-		},
-		"interval": 100
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:predicate",
+							"predicate": "danilcus:ai_target"
+						},
+						{
+							"type": "origins:raycast",
+							"space": "local",
+							"entity": true,
+							"block": true,
+							"entity_distance": 32.0,
+							"match_bientity_condition": {
+								"type": "origins:attack_target"
+							}
+						}
+					]
+				},
+				"if_action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "tp @s ~ ~ ~ ~ ~-25"
+						},
+						{
+							"type": "origins:fire_projectile",
+							"entity_type": "minecraft:ender_pearl",
+							"count": 1,
+							"speed": 0.9
+						},
+						{
+							"type": "origins:play_sound",
+							"sound": "minecraft:entity.ender_pearl.throw",
+							"volume": 1.0,
+							"pitch": 0.5
+						},
+						{
+							"type": "origins:swing_hand"
+						}
+					]
+				}
+			}
+		}
 	}
 }

@@ -10,33 +10,37 @@
 	"Enchant": {
 		"type": "origins:action_on_callback",
 		"entity_action_gained": {
-			"type": "origins:and",
-			"actions": [
-				{
-					"type": "origins:chance",
-					"action": {
-						"type": "origins:execute_command",
-						"command": "enchant @s minecraft:flame 1"
+			"type": "origins:delay",
+			"ticks": 1,
+			"action": {
+				"type": "origins:and",
+				"actions": [
+					{
+						"type": "origins:chance",
+						"action": {
+							"type": "origins:execute_command",
+							"command": "enchant @s minecraft:flame 1"
+						},
+						"chance": 0.2
 					},
-					"chance": 0.2
-				},
-				{
-					"type": "origins:chance",
-					"action": {
-						"type": "origins:execute_command",
-						"command": "enchant @s minecraft:punch 2"
+					{
+						"type": "origins:chance",
+						"action": {
+							"type": "origins:execute_command",
+							"command": "enchant @s minecraft:punch 2"
+						},
+						"chance": 0.35
 					},
-					"chance": 0.35
-				},
-				{
-					"type": "origins:chance",
-					"action": {
-						"type": "origins:execute_command",
-						"command": "enchant @s minecraft:multishot 1"
-					},
-					"chance": 0.2
-				}
-			]
+					{
+						"type": "origins:chance",
+						"action": {
+							"type": "origins:execute_command",
+							"command": "enchant @s minecraft:multishot 1"
+						},
+						"chance": 0.2
+					}
+				]
+			}
 		}
 	}
 }

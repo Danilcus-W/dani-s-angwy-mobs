@@ -9,59 +9,62 @@
 	},
 	"Tick": {
 		"type": "origins:action_over_time",
-		"condition": {
-			"type": "origins:and",
-			"conditions": [
-				{
-					"type": "origins:or",
+		"interval": 40,
+		"entity_action": {
+			"type": "origins:chance",
+			"chance": 1.0,
+			"action": {
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:and",
 					"conditions": [
 						{
-							"type": "origins:collided_horizontally"
+							"type": "origins:or",
+							"conditions": [
+								{
+									"type": "origins:collided_horizontally"
+								},
+								{
+									"type": "origins:in_block",
+									"block_condition": {
+										"type": "origins:offset",
+										"condition": {
+											"type": "origins:block",
+											"block": "farm_and_charm:sturdy_ladder"
+										},
+										"y": -1
+									}
+								}
+							]
 						},
 						{
 							"type": "origins:in_block",
 							"block_condition": {
-								"type": "origins:offset",
-								"condition": {
-									"type": "origins:block",
-									"block": "farm_and_charm:sturdy_ladder"
-								},
-								"y": -1
+								"type": "origins:in_tag",
+								"tag": "danilcus:replacable"
 							}
 						}
 					]
 				},
-				{
-					"type": "origins:in_block",
-					"block_condition": {
-						"type": "origins:in_tag",
-						"tag": "danilcus:replacable"
-					}
+				"if_action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "setblock ~ ~ ~ farm_and_charm:sturdy_ladder"
+						},
+						{
+							"type": "origins:play_sound",
+							"sound": "minecraft:block.ladder.place",
+							"volume": 1.0,
+							"pitch": 0.8
+						},
+						{
+							"type": "origins:swing_hand"
+						}
+					]
 				}
-			]
-		},
-		"entity_action": {
-			"type": "origins:chance",
-			"action": {
-				"type": "origins:and",
-				"actions": [
-					{
-						"type": "origins:execute_command",
-						"command": "setblock ~ ~ ~ farm_and_charm:sturdy_ladder"
-					},
-					{
-						"type": "origins:play_sound",
-						"sound": "minecraft:block.ladder.place",
-						"volume": 1.0,
-						"pitch": 0.8
-					},
-					{
-						"type": "origins:swing_hand"
-					}
-				]
-			},
-			"chance": 1.0
-		},
-		"interval": 40
+			}
+		}
 	}
 }

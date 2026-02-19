@@ -9,50 +9,53 @@
 	},
 	"Tick": {
 		"type": "origins:action_over_time",
-		"condition": {
-			"type": "origins:predicate",
-			"predicate": "danilcus:ai_target"
-		},
+		"interval": 30,
 		"entity_action": {
 			"type": "origins:chance",
+			"chance": 0.4,
 			"action": {
-				"type": "origins:and",
-				"actions": [
-					{
-						"type": "origins:add_velocity",
-						"z": 1.0,
-						"space": "local",
-						"client": true,
-						"server": true,
-						"set": false
-					},
-					{
-						"type": "origins:execute_command",
-						"command": "tp @s ~ ~ ~ ~180 55"
-					},
-					{
-						"type": "origins:fire_projectile",
-						"entity_type": "minecraft:wind_charge",
-						"count": 1,
-						"speed": 1.0
-					},
-					{
-						"type": "origins:execute_command",
-						"command": "tp @s ~ ~ ~ ~180 ~"
-					},
-					{
-						"type": "origins:play_sound",
-						"sound": "minecraft:entity.wind_charge.throw",
-						"volume": 1.0,
-						"pitch": 0.8
-					},
-					{
-						"type": "origins:swing_hand"
-					}
-				]
-			},
-			"chance": 0.4
-		},
-		"interval": 30
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:predicate",
+					"predicate": "danilcus:ai_target"
+				},
+				"if_action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:add_velocity",
+							"z": 1.0,
+							"space": "local",
+							"client": true,
+							"server": true,
+							"set": false
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "tp @s ~ ~ ~ ~180 55"
+						},
+						{
+							"type": "origins:fire_projectile",
+							"entity_type": "minecraft:wind_charge",
+							"count": 1,
+							"speed": 1.0
+						},
+						{
+							"type": "origins:execute_command",
+							"command": "tp @s ~ ~ ~ ~180 ~"
+						},
+						{
+							"type": "origins:play_sound",
+							"sound": "minecraft:entity.wind_charge.throw",
+							"volume": 1.0,
+							"pitch": 0.8
+						},
+						{
+							"type": "origins:swing_hand"
+						}
+					]
+				}
+			}
+		}
 	}
 }

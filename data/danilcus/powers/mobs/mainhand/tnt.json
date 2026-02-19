@@ -28,7 +28,7 @@
 						"type": "origins:target_condition",
 						"condition": {
 							"type": "origins:nbt",
-							"nbt": "{Tags:{'event'}}",
+							"nbt": "{}",
 							"inverted": true
 						}
 					}

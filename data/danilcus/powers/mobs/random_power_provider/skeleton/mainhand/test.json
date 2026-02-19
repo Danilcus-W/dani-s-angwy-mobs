@@ -6,7 +6,7 @@
 			"type": "origins:if_else",
 			"condition": {
 				"type": "origins:nbt",
-				"nbt": "{Tags:{'event'}}"
+				"nbt": "{}"
 			},
 			"if_action":{
 				"type": "origins:choice",

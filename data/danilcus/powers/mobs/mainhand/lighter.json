@@ -9,43 +9,46 @@
 	},
 	"Tick": {
 		"type": "origins:action_over_time",
-		"condition": {
-			"type": "origins:and",
-			"conditions": [
-				{
-					"type": "origins:predicate",
-					"predicate": "danilcus:ai_target"
-				},
-				{
-					"type": "origins:raycast",
-					"space": "local",
-					"shape_type": "collider",
-					"block": true,
-					"entity": false,
-					"block_distance": 2.0
-				}
-			]
-		},
+		"interval": 20,
 		"entity_action": {
 			"type": "origins:chance",
+			"chance": 0.9,
 			"action": {
-				"type": "origins:and",
-				"actions": [
-					{
-						"type": "origins:execute_command",
-						"command": "setblock ^ ^1 ^0.5 minecraft:fire keep"
-					},
-					{
-						"type": "origins:play_sound",
-						"sound": "minecraft:item.flintandsteel.use"
-					},
-					{
-						"type": "origins:swing_hand"
-					}
-				]
-			},
-			"chance": 0.9
-		},
-		"interval": 20
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:predicate",
+							"predicate": "danilcus:ai_target"
+						},
+						{
+							"type": "origins:raycast",
+							"space": "local",
+							"shape_type": "collider",
+							"block": true,
+							"entity": false,
+							"block_distance": 2.0
+						}
+					]
+				},
+				"if_action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "setblock ^ ^1 ^0.5 minecraft:fire keep"
+						},
+						{
+							"type": "origins:play_sound",
+							"sound": "minecraft:item.flintandsteel.use"
+						},
+						{
+							"type": "origins:swing_hand"
+						}
+					]
+				}
+			}
+		}
 	}
 }

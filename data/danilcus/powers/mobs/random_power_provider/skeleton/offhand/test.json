@@ -6,7 +6,7 @@
 			"type": "origins:if_else",
 			"condition": {
 				"type": "origins:nbt",
-				"nbt": "{Tags:{'event'}}"
+				"nbt": "{}"
 			},
 			"if_action":{
 				"type": "origins:choice",
@@ -29,6 +29,14 @@
 						"element": {
 							"type": "origins:grant_power",
 							"power": "danilcus:mobs/offhand/ender_pearl",
+							"source": "*:random_power"
+						},
+						"weight": 3
+					},
+					{
+						"element": {
+							"type": "origins:grant_power",
+							"power": "danilcus:mobs/offhand/harm_potion",
 							"source": "*:random_power"
 						},
 						"weight": 3

@@ -2,8 +2,10 @@
 	"type": "origins:multiple",
 	"Tick": {
 		"type": "origins:action_over_time",
+		"interval": 1,
 		"entity_action": {
 			"type": "origins:chance",
+			"chance": 0.9,
 			"action": {
 				"type": "origins:and",
 				"actions": [
@@ -28,9 +30,7 @@
 						}
 					}
 				]
-			},
-			"chance": 0.90
-		},
-		"interval": 1
+			}
+		}
 	}
 }
