@@ -65,7 +65,7 @@
 					{
 						"type": "origins:revoke_power",
 						"power": "*:*",
-						"source": "apoli:global"
+						"source": "*:random_power"
 					}
 				]
 			},
