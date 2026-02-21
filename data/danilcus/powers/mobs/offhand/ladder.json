@@ -1,13 +1,13 @@
 {
 	"type": "origins:multiple",
-	"Item":{
+	"item":{
 		"type": "origins:action_on_callback",
 		"entity_action_gained": {
 			"type": "origins:execute_command",
 			"command": "item replace entity @s weapon.offhand with farm_and_charm:sturdy_ladder"
 		}
 	},
-	"Tick": {
+	"tick": {
 		"type": "origins:action_over_time",
 		"interval": 10,
 		"entity_action": {
@@ -32,7 +32,7 @@
 												},
 												{
 													"type": "origins:resource",
-													"resource": "*:*_GroundPlaceCooldown",
+													"resource": "*:*_ground_place_cooldown",
 													"comparison": "<=",
 													"compare_to": 0
 												}
@@ -75,7 +75,7 @@
 								},
 								{
 									"type": "origins:trigger_cooldown",
-									"power": "*:*_GroundPlaceCooldown"
+									"power": "*:*_ground_place_cooldown"
 								},
 								{
 									"type": "origins:swing_hand",
@@ -124,7 +124,7 @@
 								},
 								{
 									"type": "origins:trigger_cooldown",
-									"power": "*:*_GroundPlaceCooldown"
+									"power": "*:*_ground_place_cooldown"
 								},
 								{
 									"type": "origins:swing_hand",
@@ -137,7 +137,7 @@
 			}
 		}
 	},
-	"GroundPlaceCooldown": {
+	"ground_place_cooldown": {
 		"type": "origins:cooldown",
 		"cooldown": 200
 	}

@@ -1,6 +1,6 @@
 {
 	"type": "origins:multiple",
-	"Tick": {
+	"tick": {
 		"type": "origins:action_over_time",
 		"interval": 1,
 		"entity_action": {

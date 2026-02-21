@@ -1,0 +1,172 @@
+{
+	"type": "origins:action_on_callback",
+	"entity_action_gained": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:nbt",
+					"nbt": "{Tags:['dam.T1']}"
+				},
+				"if_action": {
+					"type": "origins:choice",
+					"actions": [
+						{
+							"element": {
+								"type": "origins:nothing"
+							},
+							"weight": 1
+						},
+						{
+							"element": {
+								"type": "origins:execute_command",
+								"command": "item replace entity @s weapon.mainhand with minecraft:stone_sword"
+							},
+							"weight": 1
+						},
+						{
+							"element": {
+								"type": "origins:execute_command",
+								"command": "item replace entity @s weapon.mainhand with minecraft:stone_axe"
+							},
+							"weight": 1
+						},
+						{
+							"element": {
+								"type": "origins:execute_command",
+								"command": "item replace entity @s weapon.mainhand with minecraft:stone_spear"
+							},
+							"weight": 1
+						}
+					]
+				}
+			},
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:nbt",
+					"nbt": "{Tags:['dam.T2']}"
+				},
+				"if_action": {
+					"type": "origins:choice",
+					"actions": [
+						{
+							"element": {
+								"type": "origins:nothing"
+							},
+							"weight": 1
+						},
+						{
+							"element": {
+								"type": "origins:execute_command",
+								"command": "item replace entity @s weapon.mainhand with minecraft:iron_sword"
+							},
+							"weight": 1
+						},
+						{
+							"element": {
+								"type": "origins:execute_command",
+								"command": "item replace entity @s weapon.mainhand with minecraft:iron_axe"
+							},
+							"weight": 1
+						},
+						{
+							"element": {
+								"type": "origins:execute_command",
+								"command": "item replace entity @s weapon.mainhand with minecraft:iron_spear"
+							},
+							"weight": 1
+						}
+					]
+				}
+			},
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:nbt",
+					"nbt": "{Tags:['dam.T3']}"
+				},
+				"if_action": {
+					"type": "origins:choice",
+					"actions": [
+						{
+							"element": {
+								"type": "origins:nothing"
+							},
+							"weight": 1
+						},
+						{
+							"element": {
+								"type": "origins:execute_command",
+								"command": "item replace entity @s weapon.mainhand with minecraft:diamond_sword"
+							},
+							"weight": 1
+						},
+						{
+							"element": {
+								"type": "origins:execute_command",
+								"command": "item replace entity @s weapon.mainhand with minecraft:diamond_axe"
+							},
+							"weight": 1
+						},
+						{
+							"element": {
+								"type": "origins:execute_command",
+								"command": "item replace entity @s weapon.mainhand with minecraft:diamond_spear"
+							},
+							"weight": 1
+						}
+					]
+				}
+			},
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:nbt",
+					"nbt": "{Tags:['dam.T4']}"
+				},
+				"if_action": {
+					"type": "origins:choice",
+					"actions": [
+						{
+							"element": {
+								"type": "origins:nothing"
+							},
+							"weight": 1
+						},
+						{
+							"element": {
+								"type": "origins:execute_command",
+								"command": "item replace entity @s weapon.mainhand with minecraft:netherite_sword"
+							},
+							"weight": 1
+						},
+						{
+							"element": {
+								"type": "origins:execute_command",
+								"command": "item replace entity @s weapon.mainhand with minecraft:netherite_axe"
+							},
+							"weight": 1
+						},
+						{
+							"element": {
+								"type": "origins:execute_command",
+								"command": "item replace entity @s weapon.mainhand with minecraft:netherite_spear"
+							},
+							"weight": 1
+						}
+					]
+				}
+			},
+			{
+				"type": "origins:delay",
+				"ticks": 1,
+				"action": {
+					"type": "origins:execute_command",
+					"command": "item modify entity @s weapon.mainhand danilcus:randomize_modules"
+				}
+			}
+		]
+	}
+}

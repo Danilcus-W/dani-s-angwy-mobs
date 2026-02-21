@@ -1,0 +1,176 @@
+{
+	"type": "origins:action_on_callback",
+	"entity_action_gained": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:nbt",
+					"nbt": "{Tags:['dam.offhand.lighter']}"
+				},
+				"if_action": {
+					"type": "origins:grant_power",
+					"power": "*:mobs/offhand/lighter",
+					"source": "*:*"
+				}
+			},
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:nbt",
+					"nbt": "{Tags:['dam.armor.vanilla']}"
+				},
+				"if_action": {
+					"type": "origins:grant_power",
+					"power": "*:mobs/armor/vanilla",
+					"source": "*:*"
+				}
+			},
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:nbt",
+					"nbt": "{Tags:['dam.mainhand.weapon.vanilla']}"
+				},
+				"if_action": {
+					"type": "origins:grant_power",
+					"power": "*:mobs/mainhand/weapon/vanilla",
+					"source": "*:*"
+				}
+			},
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:nbt",
+					"nbt": "{Tags:['dam.offhand.wind_charge']}"
+				},
+				"if_action": {
+					"type": "origins:grant_power",
+					"power": "*:mobs/offhand/wind_charge",
+					"source": "*:*"
+				}
+			},
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:nbt",
+					"nbt": "{Tags:['dam.offhand.wind_charge_strafe']}"
+				},
+				"if_action": {
+					"type": "origins:grant_power",
+					"power": "*:mobs/offhand/wind_charge_strafe",
+					"source": "*:*"
+				}
+			},
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:nbt",
+					"nbt": "{Tags:['dam.offhand.ladder']}"
+				},
+				"if_action": {
+					"type": "origins:grant_power",
+					"power": "*:mobs/offhand/ladder",
+					"source": "*:*"
+				}
+			},
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:nbt",
+					"nbt": "{Tags:['dam.offhand.harm_potion']}"
+				},
+				"if_action": {
+					"type": "origins:grant_power",
+					"power": "*:mobs/offhand/harm_potion",
+					"source": "*:*"
+				}
+			},
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:nbt",
+					"nbt": "{Tags:['dam.offhand.ender_pearl']}"
+				},
+				"if_action": {
+					"type": "origins:grant_power",
+					"power": "*:mobs/offhand/ender_pearl",
+					"source": "*:*"
+				}
+			},
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:nbt",
+					"nbt": "{Tags:['dam.natural.slime_infection']}"
+				},
+				"if_action": {
+					"type": "origins:grant_power",
+					"power": "*:mobs/natural/slime_infection",
+					"source": "*:*"
+				}
+			},
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:nbt",
+					"nbt": "{Tags:['dam.natural.flying_grab']}"
+				},
+				"if_action": {
+					"type": "origins:grant_power",
+					"power": "*:mobs/natural/flying_grab",
+					"source": "*:*"
+				}
+			},
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:nbt",
+					"nbt": "{Tags:['dam.mainhand.bow']}"
+				},
+				"if_action": {
+					"type": "origins:grant_power",
+					"power": "*:mobs/mainhand/bow",
+					"source": "*:*"
+				}
+			},
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:nbt",
+					"nbt": "{Tags:['dam.mainhand.lighter']}"
+				},
+				"if_action": {
+					"type": "origins:grant_power",
+					"power": "*:mobs/mainhand/lighter",
+					"source": "*:*"
+				}
+			},
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:nbt",
+					"nbt": "{Tags:['dam.offhand.tnt']}"
+				},
+				"if_action": {
+					"type": "origins:grant_power",
+					"power": "*:mobs/offhand/tnt",
+					"source": "*:*"
+				}
+			},
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:nbt",
+					"nbt": "{Tags:['dam.mainhand.tnt']}"
+				},
+				"if_action": {
+					"type": "origins:grant_power",
+					"power": "*:mobs/mainhand/tnt",
+					"source": "*:*"
+				}
+			}
+		]
+	}
+}

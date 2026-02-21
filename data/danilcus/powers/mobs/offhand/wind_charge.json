@@ -1,13 +1,13 @@
 {
 	"type": "origins:multiple",
-	"Item":{
+	"item":{
 		"type": "origins:action_on_callback",
 		"entity_action_gained": {
 			"type": "origins:execute_command",
 			"command": "item replace entity @s weapon.offhand with minecraft:wind_charge"
 		}
 	},
-	"Tick": {
+	"tick": {
 		"type": "origins:action_over_time",
 		"interval": 30,
 		"entity_action": {

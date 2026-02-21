@@ -1,162 +1,333 @@
 {
 	"type": "origins:multiple",
-	"Head":{
+	"head":{
 		"type": "origins:action_on_callback",
 		"entity_action_gained": {
-			"type": "origins:choice",
+			"type": "origins:and",
 			"actions": [
 				{
-					"element": {
-						"type": "origins:nothing"
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:nbt",
+						"nbt": "{Tags:['dam.T0']}"
 					},
-					"weight": 5
+					"if_action": {
+						"type": "origins:chance",
+						"chance": 0.6,
+						"action": {
+							"type": "origins:execute_command",
+							"command": "item replace entity @s armor.head with minecraft:leather_helmet"
+						}
+					}
 				},
 				{
-					"element": {
-						"type": "origins:execute_command",
-						"command": "item replace entity @s armor.head with minecraft:black_banner"
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:nbt",
+						"nbt": "{Tags:['dam.T1']}"
 					},
-					"weight": 1
+					"if_action": {
+						"type": "origins:chance",
+						"chance": 0.6,
+						"action": {
+							"type": "origins:execute_command",
+							"command": "item replace entity @s armor.head with minecraft:chainmail_helmet"
+						}
+					}
 				},
 				{
-					"element": {
-						"type": "origins:execute_command",
-						"command": "item replace entity @s armor.head with minecraft:carved_pumpkin"
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:nbt",
+						"nbt": "{Tags:['dam.T2']}"
 					},
-					"weight": 1
+					"if_action": {
+						"type": "origins:chance",
+						"chance": 0.6,
+						"action": {
+							"type": "origins:execute_command",
+							"command": "item replace entity @s armor.head with minecraft:iron_helmet"
+						}
+					}
 				},
 				{
-					"element": {
-						"type": "origins:execute_command",
-						"command": "item replace entity @s armor.head with minecraft:turtle_helmet"
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:nbt",
+						"nbt": "{Tags:['dam.T3']}"
 					},
-					"weight": 1
+					"if_action": {
+						"type": "origins:chance",
+						"chance": 0.6,
+						"action": {
+							"type": "origins:execute_command",
+							"command": "item replace entity @s armor.head with minecraft:diamond_helmet"
+						}
+					}
 				},
 				{
-					"element": {
-						"type": "origins:execute_command",
-						"command": "item replace entity @s armor.head with minecraft:chainmail_helmet"
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:nbt",
+						"nbt": "{Tags:['dam.T4']}"
 					},
-					"weight": 5
-				},
-				{
-					"element": {
-						"type": "origins:execute_command",
-						"command": "item replace entity @s armor.head with minecraft:iron_helmet"
-					},
-					"weight": 5
-				},
-				{
-					"element": {
-						"type": "origins:execute_command",
-						"command": "item replace entity @s armor.head with minecraft:diamond_helmet"
-					},
-					"weight": 5
+					"if_action": {
+						"type": "origins:chance",
+						"chance": 0.6,
+						"action": {
+							"type": "origins:execute_command",
+							"command": "item replace entity @s armor.head with minecraft:netherite_helmet"
+						}
+					}
 				}
 			]
 		}
 	},
-	"Chest":{
+	"chest":{
 		"type": "origins:action_on_callback",
 		"entity_action_gained": {
-			"type": "origins:choice",
+			"type": "origins:and",
 			"actions": [
 				{
-					"element": {
-						"type": "origins:nothing"
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:nbt",
+						"nbt": "{Tags:['dam.T0']}"
 					},
-					"weight": 1
+					"if_action": {
+						"type": "origins:chance",
+						"chance": 0.6,
+						"action": {
+							"type": "origins:execute_command",
+							"command": "item replace entity @s armor.chest with minecraft:leather_chestplate"
+						}
+					}
 				},
 				{
-					"element": {
-						"type": "origins:execute_command",
-						"command": "item replace entity @s armor.chest with minecraft:chainmail_chestplate"
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:nbt",
+						"nbt": "{Tags:['dam.T1']}"
 					},
-					"weight": 1
+					"if_action": {
+						"type": "origins:chance",
+						"chance": 0.6,
+						"action": {
+							"type": "origins:execute_command",
+							"command": "item replace entity @s armor.chest with minecraft:chainmail_chestplate"
+						}
+					}
 				},
 				{
-					"element": {
-						"type": "origins:execute_command",
-						"command": "item replace entity @s armor.chest with minecraft:iron_chestplate"
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:nbt",
+						"nbt": "{Tags:['dam.T2']}"
 					},
-					"weight": 1
+					"if_action": {
+						"type": "origins:chance",
+						"chance": 0.6,
+						"action": {
+							"type": "origins:execute_command",
+							"command": "item replace entity @s armor.chest with minecraft:iron_chestplate"
+						}
+					}
 				},
 				{
-					"element": {
-						"type": "origins:execute_command",
-						"command": "item replace entity @s armor.chest with minecraft:diamond_chestplate"
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:nbt",
+						"nbt": "{Tags:['dam.T3']}"
 					},
-					"weight": 1
+					"if_action": {
+						"type": "origins:chance",
+						"chance": 0.6,
+						"action": {
+							"type": "origins:execute_command",
+							"command": "item replace entity @s armor.chest with minecraft:diamond_chestplate"
+						}
+					}
+				},
+				{
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:nbt",
+						"nbt": "{Tags:['dam.T4']}"
+					},
+					"if_action": {
+						"type": "origins:chance",
+						"chance": 0.6,
+						"action": {
+							"type": "origins:execute_command",
+							"command": "item replace entity @s armor.chest with minecraft:netherite_chestplate"
+						}
+					}
 				}
 			]
 		}
 	},
-	"Legs":{
+	"legs":{
 		"type": "origins:action_on_callback",
 		"entity_action_gained": {
-			"type": "origins:choice",
+			"type": "origins:and",
 			"actions": [
 				{
-					"element": {
-						"type": "origins:nothing"
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:nbt",
+						"nbt": "{Tags:['dam.T0']}"
 					},
-					"weight": 1
+					"if_action": {
+						"type": "origins:chance",
+						"chance": 0.6,
+						"action": {
+							"type": "origins:execute_command",
+							"command": "item replace entity @s armor.legs with minecraft:leather_leggings"
+						}
+					}
 				},
 				{
-					"element": {
-						"type": "origins:execute_command",
-						"command": "item replace entity @s armor.legs with minecraft:chainmail_leggings"
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:nbt",
+						"nbt": "{Tags:['dam.T1']}"
 					},
-					"weight": 1
+					"if_action": {
+						"type": "origins:chance",
+						"chance": 0.6,
+						"action": {
+							"type": "origins:execute_command",
+							"command": "item replace entity @s armor.legs with minecraft:chainmail_leggings"
+						}
+					}
 				},
 				{
-					"element": {
-						"type": "origins:execute_command",
-						"command": "item replace entity @s armor.legs with minecraft:iron_leggings"
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:nbt",
+						"nbt": "{Tags:['dam.T2']}"
 					},
-					"weight": 1
+					"if_action": {
+						"type": "origins:chance",
+						"chance": 0.6,
+						"action": {
+							"type": "origins:execute_command",
+							"command": "item replace entity @s armor.legs with minecraft:iron_leggings"
+						}
+					}
 				},
 				{
-					"element": {
-						"type": "origins:execute_command",
-						"command": "item replace entity @s armor.legs with minecraft:diamond_leggings"
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:nbt",
+						"nbt": "{Tags:['dam.T3']}"
 					},
-					"weight": 1
+					"if_action": {
+						"type": "origins:chance",
+						"chance": 0.6,
+						"action": {
+							"type": "origins:execute_command",
+							"command": "item replace entity @s armor.legs with minecraft:diamond_leggings"
+						}
+					}
+				},
+				{
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:nbt",
+						"nbt": "{Tags:['dam.T4']}"
+					},
+					"if_action": {
+						"type": "origins:chance",
+						"chance": 0.6,
+						"action": {
+							"type": "origins:execute_command",
+							"command": "item replace entity @s armor.legs with minecraft:netherite_leggings"
+						}
+					}
 				}
 			]
 		}
 	},
-	"Feet":{
+	"feet":{
 		"type": "origins:action_on_callback",
 		"entity_action_gained": {
-			"type": "origins:choice",
+			"type": "origins:and",
 			"actions": [
 				{
-					"element": {
-						"type": "origins:nothing"
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:nbt",
+						"nbt": "{Tags:['dam.T0']}"
 					},
-					"weight": 1
+					"if_action": {
+						"type": "origins:chance",
+						"chance": 0.6,
+						"action": {
+							"type": "origins:execute_command",
+							"command": "item replace entity @s armor.feet with minecraft:leather_boots"
+						}
+					}
 				},
 				{
-					"element": {
-						"type": "origins:execute_command",
-						"command": "item replace entity @s armor.feet with minecraft:chainmail_boots"
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:nbt",
+						"nbt": "{Tags:['dam.T1']}"
 					},
-					"weight": 1
+					"if_action": {
+						"type": "origins:chance",
+						"chance": 0.6,
+						"action": {
+							"type": "origins:execute_command",
+							"command": "item replace entity @s armor.feet with minecraft:chainmail_boots"
+						}
+					}
 				},
 				{
-					"element": {
-						"type": "origins:execute_command",
-						"command": "item replace entity @s armor.feet with minecraft:iron_boots"
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:nbt",
+						"nbt": "{Tags:['dam.T2']}"
 					},
-					"weight": 1
+					"if_action": {
+						"type": "origins:chance",
+						"chance": 0.6,
+						"action": {
+							"type": "origins:execute_command",
+							"command": "item replace entity @s armor.feet with minecraft:iron_boots"
+						}
+					}
 				},
 				{
-					"element": {
-						"type": "origins:execute_command",
-						"command": "item replace entity @s armor.feet with minecraft:diamond_boots"
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:nbt",
+						"nbt": "{Tags:['dam.T3']}"
 					},
-					"weight": 1
+					"if_action": {
+						"type": "origins:chance",
+						"chance": 0.6,
+						"action": {
+							"type": "origins:execute_command",
+							"command": "item replace entity @s armor.feet with minecraft:diamond_boots"
+						}
+					}
+				},
+				{
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:nbt",
+						"nbt": "{Tags:['dam.T4']}"
+					},
+					"if_action": {
+						"type": "origins:chance",
+						"chance": 0.6,
+						"action": {
+							"type": "origins:execute_command",
+							"command": "item replace entity @s armor.feet with minecraft:netherite_boots"
+						}
+					}
 				}
 			]
 		}

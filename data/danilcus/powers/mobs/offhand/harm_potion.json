@@ -1,13 +1,13 @@
 {
 	"type": "origins:multiple",
-	"Item":{
+	"item":{
 		"type": "origins:action_on_callback",
 		"entity_action_gained": {
 			"type": "origins:execute_command",
 			"command": "item replace entity @s weapon.offhand with minecraft:potion[minecraft:potion_contents={potion:'strong_harming'}]"
 		}
 	},
-	"Tick": {
+	"tick": {
 		"type": "origins:action_over_time",
 		"interval": 50,
 		"entity_action": {
@@ -25,7 +25,7 @@
 						},
 						{
 							"type": "origins:resource",
-							"resource": "*:*_Cooldown",
+							"resource": "*:*_cooldown",
 							"comparison": "<=",
 							"compare_to": 0
 						}
@@ -36,7 +36,7 @@
 					"actions": [
 						{
 							"type": "origins:trigger_cooldown",
-							"power": "*:*_Cooldown"
+							"power": "*:*_cooldown"
 						},
 						{
 							"type": "origins:play_sound",
@@ -108,7 +108,7 @@
 			}
 		}
 	},
-	"Cooldown": {
+	"cooldown": {
 		"type": "origins:cooldown",
 		"cooldown": 300
 	}

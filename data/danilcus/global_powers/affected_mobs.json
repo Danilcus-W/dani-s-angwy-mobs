@@ -1,0 +1,16 @@
+{
+    "entity_types": [
+        "minecraft:zombie",
+        "minecraft:husk",
+
+        "minecraft:skeleton",
+        "minecraft:stray",
+        "minecraft:parched",
+        
+        "minecraft:phantom"
+    ],
+    "powers": [
+        "danilcus:mobs/power_provider",
+        "danilcus:team"
+    ]
+}
