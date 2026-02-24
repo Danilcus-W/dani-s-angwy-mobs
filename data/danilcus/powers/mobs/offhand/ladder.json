@@ -39,24 +39,18 @@
 											]
 										},
 										{
-											"type": "origins:in_block",
-											"block_condition": {
-												"type": "origins:offset",
-												"condition": {
-													"type": "origins:block",
-													"block": "farm_and_charm:sturdy_ladder"
-												},
-												"y": -1
-											}
+											"type": "origins:command",
+											"command": "execute as @s if block ~ ~-1 ~ farm_and_charm:sturdy_ladder",
+											"comparison": ">=",
+											"compare_to": 1
 										}
 									]
 								},
 								{
-									"type": "origins:in_block",
-									"block_condition": {
-										"type": "origins:in_tag",
-										"tag": "danilcus:replacable"
-									}
+									"type": "origins:command",
+									"command": "execute as @s if block ~ ~ ~ #danilcus:ladder_replacable",
+									"comparison": ">=",
+									"compare_to": 1
 								}
 							]
 						},
@@ -90,22 +84,16 @@
 							"type": "origins:and",
 							"conditions": [
 								{
-									"type": "origins:in_block",
-									"block_condition": {
-										"type": "origins:block",
-										"block": "farm_and_charm:sturdy_ladder"
-									}
+									"type": "origins:command",
+									"command": "execute as @s if block ~ ~ ~ farm_and_charm:sturdy_ladder",
+									"comparison": ">=",
+									"compare_to": 1
 								},
 								{
-									"type": "origins:in_block",
-									"block_condition": {
-										"type": "origins:offset",
-										"condition": {
-											"type": "origins:in_tag",
-											"tag": "danilcus:replacable"
-										},
-										"y": 1
-									}
+									"type": "origins:command",
+									"command": "execute as @s if block ~ ~1 ~ #danilcus:ladder_replacable",
+									"comparison": ">=",
+									"compare_to": 1
 								}
 							]
 						},

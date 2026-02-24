@@ -10,7 +10,7 @@
         "minecraft:phantom"
     ],
     "powers": [
-        "danilcus:mobs/power_provider",
+        "danilcus:power_provider",
         "danilcus:team"
     ]
 }
