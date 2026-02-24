@@ -21,7 +21,7 @@
 						"element": {
 							"type": "origins:grant_power",
 							"power": "danilcus:mobs/mainhand/weapon_t2",
-							"source": "*:random_power"
+							"source": "*:danilcus"
 						},
 						"weight": 10
 					},
@@ -29,7 +29,7 @@
 						"element": {
 							"type": "origins:grant_power",
 							"power": "danilcus:mobs/mainhand/tnt",
-							"source": "*:random_power"
+							"source": "*:danilcus"
 						},
 						"weight": 1
 					},
@@ -37,7 +37,7 @@
 						"element": {
 							"type": "origins:grant_power",
 							"power": "danilcus:mobs/mainhand/lighter",
-							"source": "*:random_power"
+							"source": "*:danilcus"
 						},
 						"weight": 1
 					}

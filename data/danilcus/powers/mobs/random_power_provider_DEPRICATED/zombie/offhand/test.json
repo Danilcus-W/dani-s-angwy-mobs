@@ -21,7 +21,7 @@
 						"element": {
 							"type": "origins:grant_power",
 							"power": "danilcus:mobs/offhand/wind_charge",
-							"source": "*:random_power"
+							"source": "*:danilcus"
 						},
 						"weight": 3
 					},
@@ -29,7 +29,7 @@
 						"element": {
 							"type": "origins:grant_power",
 							"power": "danilcus:mobs/offhand/ender_pearl",
-							"source": "*:random_power"
+							"source": "*:danilcus"
 						},
 						"weight": 3
 					},
@@ -37,7 +37,7 @@
 						"element": {
 							"type": "origins:grant_power",
 							"power": "danilcus:mobs/offhand/harm_potion",
-							"source": "*:random_power"
+							"source": "*:danilcus"
 						},
 						"weight": 3
 					},
@@ -45,7 +45,7 @@
 						"element": {
 							"type": "origins:grant_power",
 							"power": "danilcus:mobs/offhand/ladder",
-							"source": "*:random_power"
+							"source": "*:danilcus"
 						},
 						"weight": 3
 					}

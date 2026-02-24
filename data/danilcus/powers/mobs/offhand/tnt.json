@@ -69,7 +69,7 @@
 						{
 							"type": "origins:revoke_power",
 							"power": "*:*",
-							"source": "*:random_power"
+							"source": "*:danilcus"
 						}
 					]
 				}
