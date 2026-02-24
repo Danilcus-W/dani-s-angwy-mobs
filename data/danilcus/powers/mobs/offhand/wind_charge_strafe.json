@@ -7,17 +7,39 @@
 			"command": "item replace entity @s weapon.offhand with minecraft:wind_charge"
 		}
 	},
+	"immunity":{
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:type",
+			"damage_type": "minecraft:fall"
+		},
+		"modifier": {
+			"operation": "set_total",
+			"value": 0.0
+		}
+	},
 	"tick": {
 		"type": "origins:action_over_time",
-		"interval": 30,
+		"interval": 5,
 		"entity_action": {
 			"type": "origins:chance",
-			"chance": 0.6,
+			"chance": 0.2,
 			"action": {
 				"type": "origins:if_else",
 				"condition": {
-					"type": "origins:predicate",
-					"predicate": "danilcus:ai_target"
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:predicate",
+							"predicate": "danilcus:ai_target"
+						},
+						{
+							"type": "origins:resource",
+							"resource": "*:*_cooldown",
+							"comparison": "<=",
+							"compare_to": 0
+						}
+					]
 				},
 				"if_action": {
 					"type": "origins:and",
@@ -30,7 +52,7 @@
 								"actions": [
 									{
 										"type": "origins:add_velocity",
-										"x": 1.0,
+										"x": 0.9,
 										"space": "local",
 										"client": true,
 										"server": true,
@@ -38,7 +60,7 @@
 									},
 									{
 										"type": "origins:execute_command",
-										"command": "tp @s ~ ~ ~ ~85 55"
+										"command": "tp @s ~ ~ ~ ~85 50"
 									}
 								]
 							},
@@ -47,7 +69,7 @@
 								"actions": [
 									{
 										"type": "origins:add_velocity",
-										"x": -1.0,
+										"x": -0.9,
 										"space": "local",
 										"client": true,
 										"server": true,
@@ -55,7 +77,7 @@
 									},
 									{
 										"type": "origins:execute_command",
-										"command": "tp @s ~ ~ ~ ~-85 55"
+										"command": "tp @s ~ ~ ~ ~-85 50"
 									}
 								]
 							}
@@ -65,6 +87,10 @@
 							"entity_type": "minecraft:wind_charge",
 							"count": 1,
 							"speed": 1.0
+						},
+						{
+							"type": "origins:trigger_cooldown",
+							"power": "*:*_cooldown"
 						},
 						{
 							"type": "origins:play_sound",
@@ -80,5 +106,9 @@
 				}
 			}
 		}
+	},
+	"cooldown": {
+		"type": "origins:cooldown",
+		"cooldown": 20
 	}
 }
