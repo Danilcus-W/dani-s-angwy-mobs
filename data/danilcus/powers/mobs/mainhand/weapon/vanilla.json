@@ -23,7 +23,7 @@
 								"type": "origins:execute_command",
 								"command": "item replace entity @s weapon.mainhand with minecraft:stone_sword"
 							},
-							"weight": 1
+							"weight": 2
 						},
 						{
 							"element": {
@@ -62,7 +62,7 @@
 								"type": "origins:execute_command",
 								"command": "item replace entity @s weapon.mainhand with minecraft:iron_sword"
 							},
-							"weight": 1
+							"weight": 2
 						},
 						{
 							"element": {
@@ -101,7 +101,7 @@
 								"type": "origins:execute_command",
 								"command": "item replace entity @s weapon.mainhand with minecraft:diamond_sword"
 							},
-							"weight": 1
+							"weight": 2
 						},
 						{
 							"element": {
@@ -140,7 +140,7 @@
 								"type": "origins:execute_command",
 								"command": "item replace entity @s weapon.mainhand with minecraft:netherite_sword"
 							},
-							"weight": 1
+							"weight": 2
 						},
 						{
 							"element": {
