@@ -1,0 +1,19 @@
+{
+	"type": "origins:multiple",
+	"mount": {
+		"type": "origins:action_on_callback",
+		"entity_action_gained": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:spawn_entity",
+					"entity_type": "minecraft:zombie_horse",
+					"tag": "{Tags:['dam.mob']}",
+					"bientity_action": {
+						"type": "origins:mount"
+					}
+				}
+			]
+		}
+	}
+}

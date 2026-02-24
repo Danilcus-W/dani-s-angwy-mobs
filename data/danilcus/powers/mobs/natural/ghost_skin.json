@@ -1,0 +1,35 @@
+{
+	"type": "origins:multiple",
+	"phasing": {
+		"type": "origins:phasing",
+		"blacklist": true,
+		"block_condition": {
+			"type": "origins:block",
+			"block": "minecraft:bedrock"
+		},
+		"render_type": "none",
+		"view_distance": 32.0
+	},
+	"skin": {
+		"type": "origins:model_color",
+		"red": 0.6,
+		"green": 0.8,
+		"blue": 1.0,
+		"alpha": 0.5
+	},
+	"particles": {
+		"type": "origins:particle",
+		"particle": "minecraft:end_rod",
+		"frequency": 25,
+		"count": 1,
+		"speed": 0,
+		"spread": {
+			"x": 0.3,
+			"y": 0.3,
+			"z": 0.3
+		},
+		"offset_y": 1,
+		"visible_in_first_person": true,
+		"visible_while_invisible": false
+	}
+}

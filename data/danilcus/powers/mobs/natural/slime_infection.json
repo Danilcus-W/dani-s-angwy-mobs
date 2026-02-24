@@ -1,8 +1,7 @@
 {
 	"type": "origins:multiple",
-	"death": {
+	"effect": {
 		"type": "origins:action_on_callback",
-		"execute_chosen_when_orb": true,
 		"entity_action_gained": {
 			"type": "origins:execute_command",
 			"command": "effect give @s minecraft:oozing infinite 0 true"

@@ -1,0 +1,114 @@
+{
+	"type": "origins:multiple",
+	"item":{
+		"type": "origins:action_on_callback",
+		"entity_action_gained": {
+			"type": "origins:execute_command",
+			"command": "item replace entity @s weapon.offhand with minecraft:potion[minecraft:potion_contents={potion:'invisibility'}]"
+		}
+	},
+	"tick": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:chance",
+			"chance": 0.2,
+			"action": {
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:predicate",
+							"predicate": "danilcus:ai_target"
+						},
+						{
+							"type": "origins:resource",
+							"resource": "*:*_cooldown",
+							"comparison": "<=",
+							"compare_to": 0
+						}
+					]
+				},
+				"if_action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:trigger_cooldown",
+							"power": "*:*_cooldown"
+						},
+						{
+							"type": "origins:play_sound",
+							"sound": "minecraft:entity.generic.drink"
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 4,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "minecraft:entity.generic.drink"
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 8,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "minecraft:entity.generic.drink"
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 12,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "minecraft:entity.generic.drink"
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 16,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "minecraft:entity.generic.drink"
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 20,
+							"action": {
+								"type": "origins:play_sound",
+								"sound": "minecraft:entity.generic.drink"
+							}
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 24,
+							"action": {
+								"type": "origins:and",
+								"actions": [
+									{
+										"type": "origins:play_sound",
+										"sound": "minecraft:entity.generic.drink"
+									},
+									{
+										"type": "origins:execute_command",
+										"command": "effect give @s minecraft:invisibility 1800"
+									},
+									{
+										"type": "origins:swing_hand",
+										"hand": "OFF_HAND"
+									}
+								]
+							}
+						}
+					]
+				}
+			}
+		}
+	},
+	"cooldown": {
+		"type": "origins:cooldown",
+		"cooldown": 2000
+	}
+}

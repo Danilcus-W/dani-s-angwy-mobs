@@ -7,6 +7,66 @@
 				"type": "origins:if_else",
 				"condition": {
 					"type": "origins:nbt",
+					"nbt": "{Tags:['dam.skeleton_horse']}"
+				},
+				"if_action": {
+					"type": "origins:grant_power",
+					"power": "*:mobs/skeleton_horse",
+					"source": "*:danilcus"
+				}
+			},
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:nbt",
+					"nbt": "{Tags:['dam.zombie_horse']}"
+				},
+				"if_action": {
+					"type": "origins:grant_power",
+					"power": "*:mobs/zombie_horse",
+					"source": "*:danilcus"
+				}
+			},
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:nbt",
+					"nbt": "{Tags:['dam.natural.ghost_skin']}"
+				},
+				"if_action": {
+					"type": "origins:grant_power",
+					"power": "*:mobs/natural/ghost_skin",
+					"source": "*:danilcus"
+				}
+			},
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:nbt",
+					"nbt": "{Tags:['dam.offhand.fire_resistance_potion']}"
+				},
+				"if_action": {
+					"type": "origins:grant_power",
+					"power": "*:mobs/offhand/fire_resistance_potion",
+					"source": "*:danilcus"
+				}
+			},
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:nbt",
+					"nbt": "{Tags:['dam.offhand.invisibility_potion']}"
+				},
+				"if_action": {
+					"type": "origins:grant_power",
+					"power": "*:mobs/offhand/invisibility_potion",
+					"source": "*:danilcus"
+				}
+			},
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:nbt",
 					"nbt": "{Tags:['dam.offhand.lighter']}"
 				},
 				"if_action": {
