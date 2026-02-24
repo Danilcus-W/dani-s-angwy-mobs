@@ -14,7 +14,7 @@
 					{
 						"element": {
 							"type": "origins:grant_power",
-							"power": "danilcus:mobs/mainhand/bow",
+							"power": "danilcus:mobs/mainhand/weapon/bow",
 							"source": "*:danilcus"
 						},
 						"weight": 10

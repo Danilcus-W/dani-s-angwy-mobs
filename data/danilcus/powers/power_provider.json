@@ -127,11 +127,11 @@
 				"type": "origins:if_else",
 				"condition": {
 					"type": "origins:nbt",
-					"nbt": "{Tags:['dam.mainhand.bow']}"
+					"nbt": "{Tags:['dam.mainhand.weapon.bow']}"
 				},
 				"if_action": {
 					"type": "origins:grant_power",
-					"power": "*:mobs/mainhand/bow",
+					"power": "*:mobs/mainhand/weapon/bow",
 					"source": "*:danilcus"
 				}
 			},
