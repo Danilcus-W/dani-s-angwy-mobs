@@ -4,7 +4,7 @@
 		"type": "origins:action_on_callback",
 		"entity_action_gained": {
 			"type": "origins:execute_command",
-			"command": "item replace entity @s weapon.mainhand with minecraft:flint_and_steel"
+			"command": "item replace entity @s weapon.offhand with minecraft:flint_and_steel"
 		}
 	},
 	"tick": {
@@ -23,12 +23,10 @@
 							"predicate": "danilcus:ai_target"
 						},
 						{
-							"type": "origins:raycast",
-							"space": "local",
-							"shape_type": "collider",
-							"block": true,
-							"entity": false,
-							"block_distance": 2.0
+							"type": "origins:command",
+							"command": "execute as @s if block ^ ^1 ^ #minecraft:replaceable",
+							"comparison": ">=",
+							"compare_to": 1
 						}
 					]
 				},

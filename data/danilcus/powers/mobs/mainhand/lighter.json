@@ -23,12 +23,10 @@
 							"predicate": "danilcus:ai_target"
 						},
 						{
-							"type": "origins:raycast",
-							"space": "local",
-							"shape_type": "collider",
-							"block": true,
-							"entity": false,
-							"block_distance": 2.0
+							"type": "origins:command",
+							"command": "execute as @s if block ^ ^1 ^ #minecraft:replaceable",
+							"comparison": ">=",
+							"compare_to": 1
 						}
 					]
 				},

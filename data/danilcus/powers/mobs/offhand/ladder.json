@@ -10,118 +10,140 @@
 	"tick": {
 		"type": "origins:action_over_time",
 		"interval": 10,
+		"condition": {
+			"type": "origins:predicate",
+			"predicate": "danilcus:ai_target"
+
+		},
 		"entity_action": {
 			"type": "origins:chance",
 			"chance": 1.0,
 			"action": {
-				"type": "origins:and",
-				"actions": [
-					{
-						"type": "origins:if_else",
-						"condition": {
-							"type": "origins:and",
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:or",
 							"conditions": [
 								{
-									"type": "origins:or",
+									"type": "origins:and",
 									"conditions": [
 										{
-											"type": "origins:and",
+											"type": "origins:or",
 											"conditions": [
 												{
 													"type": "origins:collided_horizontally"
 												},
 												{
-													"type": "origins:resource",
-													"resource": "*:*_ground_place_cooldown",
-													"comparison": "<=",
-													"compare_to": 0
+													"type": "origins:raycast",
+													"distance": 1.0,
+													"space": "local_horizontal",
+													"block": true,
+													"entity": false,
+													"shape_type": "collider",
+													"fluid_handling": "none"
 												}
 											]
 										},
 										{
-											"type": "origins:command",
-											"command": "execute as @s if block ~ ~-1 ~ farm_and_charm:sturdy_ladder",
-											"comparison": ">=",
-											"compare_to": 1
+											"type": "origins:resource",
+											"resource": "*:*_ground_place_cooldown",
+											"comparison": "<=",
+											"compare_to": 0
 										}
 									]
 								},
 								{
 									"type": "origins:command",
-									"command": "execute as @s if block ~ ~ ~ #danilcus:ladder_replacable",
+									"command": "execute as @s if block ~ ~-1 ~ farm_and_charm:sturdy_ladder",
 									"comparison": ">=",
 									"compare_to": 1
 								}
 							]
 						},
-						"if_action": {
-							"type": "origins:and",
-							"actions": [
-								{
-									"type": "origins:execute_command",
-									"command": "setblock ~ ~ ~ farm_and_charm:sturdy_ladder"
-								},
-								{
-									"type": "origins:play_sound",
-									"sound": "minecraft:block.ladder.place",
-									"volume": 1.0,
-									"pitch": 0.8
-								},
-								{
-									"type": "origins:trigger_cooldown",
-									"power": "*:*_ground_place_cooldown"
-								},
-								{
-									"type": "origins:swing_hand",
-									"hand": "OFF_HAND"
-								}
-							]
+						{
+							"type": "origins:command",
+							"command": "execute as @s if block ~ ~ ~ #danilcus:ladder_replacable",
+							"comparison": ">=",
+							"compare_to": 1
 						}
+					]
+				},
+				"if_action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:execute_command",
+							"command": "function danilcus:place_ladder"
+						},
+						{
+							"type": "origins:delay",
+							"ticks": 11,
+							"action": {
+								"type": "origins:execute_command",
+								"command": "pathto @s ~ ~ ~"
+							}
+						},
+						{
+							"type": "origins:play_sound",
+							"sound": "minecraft:block.ladder.place",
+							"volume": 1.0,
+							"pitch": 0.8
+						},
+						{
+							"type": "origins:trigger_cooldown",
+							"power": "*:*_ground_place_cooldown"
+						},
+						{
+							"type": "origins:swing_hand",
+							"hand": "OFF_HAND"
+						}
+					]
+				},
+				"else_action": {
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:and",
+						"conditions": [
+							{
+								"type": "origins:command",
+								"command": "execute as @s if block ~ ~ ~ farm_and_charm:sturdy_ladder",
+								"comparison": ">=",
+								"compare_to": 1
+							},
+							{
+								"type": "origins:command",
+								"command": "execute as @s if block ~ ~1 ~ #danilcus:ladder_replacable",
+								"comparison": ">=",
+								"compare_to": 1
+							}
+						]
 					},
-					{
-						"type": "origins:if_else",
-						"condition": {
-							"type": "origins:and",
-							"conditions": [
-								{
-									"type": "origins:command",
-									"command": "execute as @s if block ~ ~ ~ farm_and_charm:sturdy_ladder",
-									"comparison": ">=",
-									"compare_to": 1
-								},
-								{
-									"type": "origins:command",
-									"command": "execute as @s if block ~ ~1 ~ #danilcus:ladder_replacable",
-									"comparison": ">=",
-									"compare_to": 1
-								}
-							]
-						},
-						"if_action": {
-							"type": "origins:and",
-							"actions": [
-								{
-									"type": "origins:execute_command",
-									"command": "setblock ~ ~1 ~ farm_and_charm:sturdy_ladder"
-								},
-								{
-									"type": "origins:play_sound",
-									"sound": "minecraft:block.ladder.place",
-									"volume": 1.0,
-									"pitch": 0.8
-								},
-								{
-									"type": "origins:trigger_cooldown",
-									"power": "*:*_ground_place_cooldown"
-								},
-								{
-									"type": "origins:swing_hand",
-									"hand": "OFF_HAND"
-								}
-							]
-						}
+					"if_action": {
+						"type": "origins:and",
+						"actions": [
+							{
+								"type": "origins:execute_command",
+								"command": "function danilcus:add_ladder"
+							},
+							{
+								"type": "origins:play_sound",
+								"sound": "minecraft:block.ladder.place",
+								"volume": 1.0,
+								"pitch": 0.8
+							},
+							{
+								"type": "origins:trigger_cooldown",
+								"power": "*:*_ground_place_cooldown"
+							},
+							{
+								"type": "origins:swing_hand",
+								"hand": "OFF_HAND"
+							}
+						]
 					}
-				]
+				}
 			}
 		}
 	},

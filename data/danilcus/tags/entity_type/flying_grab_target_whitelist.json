@@ -1,0 +1,10 @@
+{
+	"values": [
+        "minecraft:zombie",
+        "minecraft:husk",
+        "minecraft:skeleton",
+        "minecraft:stray",
+        "minecraft:parched",
+		"minecraft:villager"
+	]
+}
