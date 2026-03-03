@@ -3,10 +3,12 @@
     "entity" : "this",
     "predicate" : {
         "targeted_entity" : {
-            "absolute": {
-				"max": 32.0,
-				"min": 0.0
-			}
+            "distance": {
+                "absolute": {
+                    "max": 32, 
+                    "min": 0
+                }
+            }
         }
     }
 }
