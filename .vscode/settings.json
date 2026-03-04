@@ -4,5 +4,7 @@
 	"editor.formatOnType": true,
 	"editor.inlineSuggest.edits.showCollapsed": true,
 	"editor.inlineSuggest.showToolbar": "always",
-	"files.trimTrailingWhitespace": true
+	"files.trimTrailingWhitespace": true,
+	"editor.tabSize": 3,
+	"editor.tabCompletion": "onlySnippets"
 }
