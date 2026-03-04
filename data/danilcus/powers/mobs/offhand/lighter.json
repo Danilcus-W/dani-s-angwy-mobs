@@ -24,7 +24,7 @@
 						},
 						{
 							"type": "origins:command",
-							"command": "execute as @s if block ^ ^1 ^ #minecraft:replaceable",
+							"command": "execute as @s if block ^ ^1 ^0.5 #minecraft:replaceable",
 							"comparison": ">=",
 							"compare_to": 1
 						}
@@ -35,7 +35,7 @@
 					"actions": [
 						{
 							"type": "origins:execute_command",
-							"command": "setblock ^ ^1 ^0.5 minecraft:fire keep"
+							"command": "setblock ^ ^1 ^0.5 minecraft:fire destroy"
 						},
 						{
 							"type": "origins:play_sound",

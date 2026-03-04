@@ -7,6 +7,7 @@
     	"#minecraft:candles",
     	"#minecraft:flowers",
     	"#minecraft:leaves",
-    	"#minecraft:crops"
+    	"#minecraft:crops",
+		"#minecraft:slabs"
 	]
 }

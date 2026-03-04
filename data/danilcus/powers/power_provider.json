@@ -7,6 +7,18 @@
 				"type": "origins:if_else",
 				"condition": {
 					"type": "origins:nbt",
+					"nbt": "{Tags:['dam.natural.broodmother']}"
+				},
+				"if_action": {
+					"type": "origins:grant_power",
+					"power": "*:mobs/natural/broodmother",
+					"source": "*:danilcus"
+				}
+			},
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:nbt",
 					"nbt": "{Tags:['dam.skeleton_horse']}"
 				},
 				"if_action": {

@@ -6,8 +6,10 @@
         "minecraft:skeleton",
         "minecraft:stray",
         "minecraft:parched",
-        
-        "minecraft:phantom"
+
+        "minecraft:phantom",
+
+        "minecraft:spider"
     ],
     "powers": [
         "danilcus:power_provider",
