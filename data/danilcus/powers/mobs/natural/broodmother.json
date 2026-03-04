@@ -2,23 +2,47 @@
 	"type": "origins:multiple",
 	"color": {
 		"type": "origins:model_color",
-		"red": 0.6,
-		"green": 0.4,
-		"blue": 0.1,
+		"red": 1.0,
+		"green": 0.8,
+		"blue": 0.6,
 		"alpha": 1.0
 	},
 	"hit": {
 		"type": "origins:action_on_hit",
 		"bientity_action": {
-			"type": "origins:target_action",
+			"type": "origins:chance",
+			"chance": 1.0,
 			"action": {
-				"type": "origins:chance",
-				"chance": 0.1,
-				"action": {
-					"type": "origins:grant_power",
-					"power": "*:effects/spider_infection",
-					"source": "*:danilcus"
-				}
+				"type": "origins:and",
+				"actions": [
+					{
+						"type": "origins:target_action",
+						"action": {
+							"type": "origins:grant_power",
+							"power": "*:effects/spider_infection",
+							"source": "*:danilcus"
+						}
+					},
+					{
+						"type": "origins:add_velocity",
+						"x": 0.0,
+						"y": 0.1,
+						"z": -4.0,
+						"space": "local_horizontal",
+						"client": true,
+						"server": true,
+						"set": true
+					},
+					{
+						"type": "origins:actor_action",
+						"action": {
+							"type": "origins:play_sound",
+							"sound": "minecraft:entity.fox.bite",
+							"volume": 2.0,
+							"pitch": 0.8
+						}
+					}
+				]
 			}
 		},
 		"cooldown": 1
