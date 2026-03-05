@@ -12,7 +12,8 @@
         "minecraft:spider"
     ],
     "powers": [
-        "danilcus:power_provider",
-        "danilcus:team"
+        "*:mobs/run_from_tnt",
+        "*:power_provider",
+        "*:team"
     ]
 }

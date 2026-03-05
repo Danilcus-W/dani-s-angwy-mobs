@@ -34,7 +34,7 @@
 								"type": "origins:target_condition",
 								"condition": {
 									"type": "origins:nbt",
-									"nbt": "{}",
+									"nbt": "{Tags:['dam.mob']}",
 									"inverted": true
 								}
 							}

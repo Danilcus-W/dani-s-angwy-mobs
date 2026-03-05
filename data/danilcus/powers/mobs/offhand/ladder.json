@@ -82,7 +82,7 @@
 							"ticks": 11,
 							"action": {
 								"type": "origins:execute_command",
-								"command": "pathto @s ~ ~ ~"
+								"command": "pathto @s stop"
 							}
 						},
 						{

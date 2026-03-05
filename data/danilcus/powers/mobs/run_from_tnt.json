@@ -1,0 +1,14 @@
+{
+	"type": "origins:action_over_time",
+	"interval": 5,
+	"condition": {
+		"type": "origins:command",
+		"command": "execute if entity @e[type=minecraft:tnt,sort=arbitrary,distance=..8]",
+		"comparison": ">=",
+		"compare_to": 1
+	},
+	"entity_action": {
+		"type": "origins:execute_command",
+		"command": "execute facing entity @e[type=minecraft:tnt,sort=arbitrary,limit=1] eyes run pathto @s ^ ^ ^-4"
+	}
+}
