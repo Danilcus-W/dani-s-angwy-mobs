@@ -2,9 +2,44 @@
 	"values": [
         "minecraft:zombie",
         "minecraft:husk",
+        "minecraft:drowned",
+
         "minecraft:skeleton",
         "minecraft:stray",
         "minecraft:parched",
-		"minecraft:villager"
+        "minecraft:bogged",
+
+        "minecraft:wither_skeleton",
+
+		"minecraft:slime",
+		"minecraft:creeper",
+
+        "minecraft:spider",
+        "minecraft:cave_spider",
+
+		"minecraft:villager",
+		"mca:male_villager",
+		"mca:female_villager",
+		"minecraft:iron_golem",
+
+		"minecraft:boat",
+		"minecraft:chest_boat",
+
+		"minecraft:wolf",
+		"minecraft:horse",
+
+		"minecraft:pig",
+		"minecraft:cow",
+		"minecraft:sheep",
+
+		"minecraft:piglin",
+		"minecraft:piglin_brute",
+
+		"minecraft:evoker",
+		"minecraft:pillager",
+		"minecraft:vindicator",
+
+        "minecraft:blaze",
+        "minecraft:breeze"
 	]
 }

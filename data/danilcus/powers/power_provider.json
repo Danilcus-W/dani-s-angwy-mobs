@@ -7,11 +7,23 @@
 				"type": "origins:if_else",
 				"condition": {
 					"type": "origins:nbt",
-					"nbt": "{Tags:['dam.spider_rider']}"
+					"nbt": "{Tags:['dam.riding.phantom']}"
 				},
 				"if_action": {
 					"type": "origins:grant_power",
-					"power": "*:mobs/spider_rider",
+					"power": "*:mobs/riding/phantom",
+					"source": "*:danilcus"
+				}
+			},
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:nbt",
+					"nbt": "{Tags:['dam.riding.spider']}"
+				},
+				"if_action": {
+					"type": "origins:grant_power",
+					"power": "*:mobs/riding/spider",
 					"source": "*:danilcus"
 				}
 			},
@@ -31,11 +43,11 @@
 				"type": "origins:if_else",
 				"condition": {
 					"type": "origins:nbt",
-					"nbt": "{Tags:['dam.skeleton_horse']}"
+					"nbt": "{Tags:['dam.riding.skeleton_horse']}"
 				},
 				"if_action": {
 					"type": "origins:grant_power",
-					"power": "*:mobs/skeleton_horse",
+					"power": "*:mobs/riding/skeleton_horse",
 					"source": "*:danilcus"
 				}
 			},
@@ -43,11 +55,11 @@
 				"type": "origins:if_else",
 				"condition": {
 					"type": "origins:nbt",
-					"nbt": "{Tags:['dam.zombie_horse']}"
+					"nbt": "{Tags:['dam.riding.zombie_horse']}"
 				},
 				"if_action": {
 					"type": "origins:grant_power",
-					"power": "*:mobs/zombie_horse",
+					"power": "*:mobs/riding/zombie_horse",
 					"source": "*:danilcus"
 				}
 			},
