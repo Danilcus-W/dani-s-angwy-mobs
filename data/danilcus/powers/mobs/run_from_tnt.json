@@ -3,7 +3,7 @@
 	"interval": 5,
 	"condition": {
 		"type": "origins:command",
-		"command": "execute if entity @e[type=minecraft:tnt,sort=arbitrary,distance=..8]",
+		"command": "execute if entity @e[type=minecraft:tnt,sort=arbitrary,distance=..10]",
 		"comparison": ">=",
 		"compare_to": 1
 	},
