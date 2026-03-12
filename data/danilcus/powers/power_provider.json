@@ -7,6 +7,18 @@
 				"type": "origins:if_else",
 				"condition": {
 					"type": "origins:nbt",
+					"nbt": "{Tags:['dam.spider_rider']}"
+				},
+				"if_action": {
+					"type": "origins:grant_power",
+					"power": "*:mobs/spider_rider",
+					"source": "*:danilcus"
+				}
+			},
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:nbt",
 					"nbt": "{Tags:['dam.natural.broodmother']}"
 				},
 				"if_action": {
