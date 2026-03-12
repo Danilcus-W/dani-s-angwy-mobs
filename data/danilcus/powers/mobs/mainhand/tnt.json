@@ -27,17 +27,8 @@
 							"space": "local_horizontal",
 							"shape_type": "collider",
 							"block": true,
-							"entity": true,
-							"block_distance": 1.0,
-							"entity_distance": 2.0,
-							"match_bientity_condition": {
-								"type": "origins:target_condition",
-								"condition": {
-									"type": "origins:nbt",
-									"nbt": "{}",
-									"inverted": true
-								}
-							}
+							"entity": false,
+							"block_distance": 1.0
 						}
 					]
 				},
