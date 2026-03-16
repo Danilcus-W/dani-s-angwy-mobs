@@ -10,15 +10,13 @@
 	"tick": {
 		"type": "origins:action_over_time",
 		"interval": 10,
-		"condition": {
-			"type": "origins:predicate",
-			"predicate": "danilcus:ai_target"
-
-		},
 		"entity_action": {
-			"type": "origins:chance",
-			"chance": 1.0,
-			"action": {
+			"type": "origins:if_else",
+			"condition": {
+				"type": "origins:predicate",
+				"predicate": "danilcus:ai_target"
+			},
+			"if_action": {
 				"type": "origins:if_else",
 				"condition": {
 					"type": "origins:and",
@@ -71,35 +69,39 @@
 					]
 				},
 				"if_action": {
-					"type": "origins:and",
-					"actions": [
-						{
-							"type": "origins:execute_command",
-							"command": "function danilcus:place_ladder"
-						},
-						{
-							"type": "origins:delay",
-							"ticks": 11,
-							"action": {
+					"type": "origins:chance",
+					"chance": 0.9,
+					"action": {
+						"type": "origins:and",
+						"actions": [
+							{
 								"type": "origins:execute_command",
-								"command": "pathto @s stop"
+								"command": "function danilcus:place_ladder"
+							},
+							{
+								"type": "origins:delay",
+								"ticks": 11,
+								"action": {
+									"type": "origins:execute_command",
+									"command": "pathto @s stop"
+								}
+							},
+							{
+								"type": "origins:play_sound",
+								"sound": "minecraft:block.ladder.place",
+								"volume": 1.0,
+								"pitch": 0.8
+							},
+							{
+								"type": "origins:trigger_cooldown",
+								"power": "*:*_ground_place_cooldown"
+							},
+							{
+								"type": "origins:swing_hand",
+								"hand": "OFF_HAND"
 							}
-						},
-						{
-							"type": "origins:play_sound",
-							"sound": "minecraft:block.ladder.place",
-							"volume": 1.0,
-							"pitch": 0.8
-						},
-						{
-							"type": "origins:trigger_cooldown",
-							"power": "*:*_ground_place_cooldown"
-						},
-						{
-							"type": "origins:swing_hand",
-							"hand": "OFF_HAND"
-						}
-					]
+						]
+					}
 				},
 				"else_action": {
 					"type": "origins:if_else",
@@ -149,6 +151,6 @@
 	},
 	"ground_place_cooldown": {
 		"type": "origins:cooldown",
-		"cooldown": 200
+		"cooldown": 300
 	}
 }
