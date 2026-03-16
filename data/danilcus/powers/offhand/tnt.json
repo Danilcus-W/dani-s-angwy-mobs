@@ -12,7 +12,7 @@
 		"interval": 20,
 		"entity_action": {
 			"type": "origins:chance",
-			"chance": 0.9,
+			"chance": 0.7,
 			"action": {
 				"type": "origins:if_else",
 				"condition": {
