@@ -1,0 +1,28 @@
+{
+	"type": "origins:action_over_time",
+	"entity_action": {
+		"type": "origins:riding_action",
+		"bientity_condition": {
+			"type": "origins:target_condition",
+			"condition": {
+				"type": "origins:or",
+				"conditions": [
+					{
+						"type": "origins:entity_type",
+						"entity_type": "minecraft:boat"
+					},
+					{
+						"type": "origins:entity_type",
+						"entity_type": "minecraft:chest_boat"
+					}
+				]
+			}
+		},
+		"bientity_action": {
+			"type": "origins:damage",
+			"amount": 2.0,
+			"damage_type": "minecraft:mob_attack"
+		}
+	},
+	"interval": 10
+}

@@ -1,10 +1,12 @@
 {
 	"editor.formatOnPaste": true,
-	"editor.formatOnSave": true,
+	"editor.formatOnSave": false,
 	"editor.formatOnType": true,
 	"editor.inlineSuggest.edits.showCollapsed": true,
 	"editor.inlineSuggest.showToolbar": "always",
 	"files.trimTrailingWhitespace": true,
 	"editor.tabSize": 4,
-	"editor.tabCompletion": "onlySnippets"
+	"editor.tabCompletion": "onlySnippets",
+	"editor.defaultFormatter": null,
+	"json.format.enable": true
 }

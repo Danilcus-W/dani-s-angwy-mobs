@@ -14,7 +14,7 @@
 				{
 					"element": {
 						"type": "origins:grant_power",
-						"power": "*:mobs/spider_rider",
+						"power": "*:natural/foo",
 						"source": "*:danilcus"
 					},
 					"weight": 1

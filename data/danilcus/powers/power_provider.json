@@ -11,7 +11,7 @@
 				},
 				"if_action": {
 					"type": "origins:grant_power",
-					"power": "*:mobs/riding/phantom",
+					"power": "*:riding/phantom",
 					"source": "*:danilcus"
 				}
 			},
@@ -23,7 +23,7 @@
 				},
 				"if_action": {
 					"type": "origins:grant_power",
-					"power": "*:mobs/riding/spider",
+					"power": "*:riding/spider",
 					"source": "*:danilcus"
 				}
 			},
@@ -35,7 +35,7 @@
 				},
 				"if_action": {
 					"type": "origins:grant_power",
-					"power": "*:mobs/natural/broodmother",
+					"power": "*:natural/broodmother",
 					"source": "*:danilcus"
 				}
 			},
@@ -47,7 +47,7 @@
 				},
 				"if_action": {
 					"type": "origins:grant_power",
-					"power": "*:mobs/riding/skeleton_horse",
+					"power": "*:riding/skeleton_horse",
 					"source": "*:danilcus"
 				}
 			},
@@ -59,7 +59,7 @@
 				},
 				"if_action": {
 					"type": "origins:grant_power",
-					"power": "*:mobs/riding/zombie_horse",
+					"power": "*:riding/zombie_horse",
 					"source": "*:danilcus"
 				}
 			},
@@ -71,7 +71,7 @@
 				},
 				"if_action": {
 					"type": "origins:grant_power",
-					"power": "*:mobs/natural/ghost_skin",
+					"power": "*:natural/ghost_skin",
 					"source": "*:danilcus"
 				}
 			},
@@ -83,7 +83,7 @@
 				},
 				"if_action": {
 					"type": "origins:grant_power",
-					"power": "*:mobs/offhand/fire_resistance_potion",
+					"power": "*:offhand/fire_resistance_potion",
 					"source": "*:danilcus"
 				}
 			},
@@ -95,7 +95,7 @@
 				},
 				"if_action": {
 					"type": "origins:grant_power",
-					"power": "*:mobs/offhand/invisibility_potion",
+					"power": "*:offhand/invisibility_potion",
 					"source": "*:danilcus"
 				}
 			},
@@ -107,7 +107,7 @@
 				},
 				"if_action": {
 					"type": "origins:grant_power",
-					"power": "*:mobs/offhand/lighter",
+					"power": "*:offhand/lighter",
 					"source": "*:danilcus"
 				}
 			},
@@ -119,7 +119,7 @@
 				},
 				"if_action": {
 					"type": "origins:grant_power",
-					"power": "*:mobs/armor/vanilla",
+					"power": "*:armor/vanilla",
 					"source": "*:danilcus"
 				}
 			},
@@ -131,7 +131,7 @@
 				},
 				"if_action": {
 					"type": "origins:grant_power",
-					"power": "*:mobs/mainhand/weapon/vanilla",
+					"power": "*:mainhand/weapon/vanilla",
 					"source": "*:danilcus"
 				}
 			},
@@ -143,7 +143,7 @@
 				},
 				"if_action": {
 					"type": "origins:grant_power",
-					"power": "*:mobs/offhand/wind_charge",
+					"power": "*:offhand/wind_charge",
 					"source": "*:danilcus"
 				}
 			},
@@ -155,7 +155,7 @@
 				},
 				"if_action": {
 					"type": "origins:grant_power",
-					"power": "*:mobs/offhand/wind_charge_strafe",
+					"power": "*:offhand/wind_charge_strafe",
 					"source": "*:danilcus"
 				}
 			},
@@ -167,7 +167,7 @@
 				},
 				"if_action": {
 					"type": "origins:grant_power",
-					"power": "*:mobs/offhand/ladder",
+					"power": "*:offhand/ladder",
 					"source": "*:danilcus"
 				}
 			},
@@ -179,7 +179,7 @@
 				},
 				"if_action": {
 					"type": "origins:grant_power",
-					"power": "*:mobs/offhand/harm_potion",
+					"power": "*:offhand/harm_potion",
 					"source": "*:danilcus"
 				}
 			},
@@ -191,7 +191,7 @@
 				},
 				"if_action": {
 					"type": "origins:grant_power",
-					"power": "*:mobs/offhand/ender_pearl",
+					"power": "*:offhand/ender_pearl",
 					"source": "*:danilcus"
 				}
 			},
@@ -203,7 +203,7 @@
 				},
 				"if_action": {
 					"type": "origins:grant_power",
-					"power": "*:mobs/natural/slime_infection",
+					"power": "*:natural/slime_infection",
 					"source": "*:danilcus"
 				}
 			},
@@ -215,7 +215,7 @@
 				},
 				"if_action": {
 					"type": "origins:grant_power",
-					"power": "*:mobs/natural/flying_grab",
+					"power": "*:natural/flying_grab",
 					"source": "*:danilcus"
 				}
 			},
@@ -227,7 +227,7 @@
 				},
 				"if_action": {
 					"type": "origins:grant_power",
-					"power": "*:mobs/mainhand/weapon/bow",
+					"power": "*:mainhand/weapon/bow",
 					"source": "*:danilcus"
 				}
 			},
@@ -239,7 +239,7 @@
 				},
 				"if_action": {
 					"type": "origins:grant_power",
-					"power": "*:mobs/mainhand/lighter",
+					"power": "*:mainhand/lighter",
 					"source": "*:danilcus"
 				}
 			},
@@ -251,7 +251,7 @@
 				},
 				"if_action": {
 					"type": "origins:grant_power",
-					"power": "*:mobs/offhand/tnt",
+					"power": "*:offhand/tnt",
 					"source": "*:danilcus"
 				}
 			},
@@ -263,7 +263,7 @@
 				},
 				"if_action": {
 					"type": "origins:grant_power",
-					"power": "*:mobs/mainhand/tnt",
+					"power": "*:mainhand/tnt",
 					"source": "*:danilcus"
 				}
 			}

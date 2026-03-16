@@ -3,23 +3,17 @@
         "minecraft:zombie",
         "minecraft:husk",
         "minecraft:drowned",
-
         "minecraft:skeleton",
         "minecraft:stray",
         "minecraft:parched",
         "minecraft:bogged",
-
         "minecraft:phantom",
-
         "minecraft:spider",
-
         "minecraft:blaze",
         "minecraft:breeze",
-
         "minecraft:creeper"
     ],
     "powers": [
-        "*:mobs/run_from_tnt",
         "*:power_provider",
         "*:team"
     ]

@@ -1,21 +1,13 @@
 {
 	"values": [
-        "minecraft:zombie",
-        "minecraft:husk",
-        "minecraft:drowned",
+        "#minecraft:undead",
+		"#minecraft:zombies",
+        "#minecraft:skeletons",
 
-        "minecraft:skeleton",
-        "minecraft:stray",
-        "minecraft:parched",
-        "minecraft:bogged",
-
-        "minecraft:wither_skeleton",
+		"#minecraft:arthropod",
 
 		"minecraft:slime",
 		"minecraft:creeper",
-
-        "minecraft:spider",
-        "minecraft:cave_spider",
 
 		"minecraft:villager",
 		"mca:male_villager",
@@ -35,9 +27,8 @@
 		"minecraft:piglin",
 		"minecraft:piglin_brute",
 
-		"minecraft:evoker",
-		"minecraft:pillager",
-		"minecraft:vindicator",
+		"#minecraft:illager",
+		"#minecraft:illager_friends",
 
         "minecraft:blaze",
         "minecraft:breeze"

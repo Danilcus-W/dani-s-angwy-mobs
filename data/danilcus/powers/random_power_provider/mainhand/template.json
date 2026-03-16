@@ -14,7 +14,7 @@
 				{
 					"element": {
 						"type": "origins:grant_power",
-						"power": "*:mobs/armor/foo",
+						"power": "*:mainhand/foo",
 						"source": "*:danilcus"
 					},
 					"weight": 1
