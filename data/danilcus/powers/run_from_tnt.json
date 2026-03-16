@@ -1,6 +1,6 @@
 {
 	"type": "origins:action_over_time",
-	"interval": 5,
+	"interval": 4,
 	"condition": {
 		"type": "origins:command",
 		"command": "execute if entity @e[type=minecraft:tnt,sort=arbitrary,distance=..10]",
