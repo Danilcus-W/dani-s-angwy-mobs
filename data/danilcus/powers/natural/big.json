@@ -1,0 +1,28 @@
+{
+	"type": "origins:multiple",
+	"size": {
+		"type": "origins:action_on_callback",
+		"entity_action_gained": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "scale set pehkui:height 1.2 @s"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "scale set pehkui:width 1.3 @s"
+				}
+			]
+		}
+	},
+	"health": {
+		"type": "origins:action_on_callback",
+		"entity_action_gained": {
+			"type": "origins:Attribute",
+			"attribute": "minecraft:generic.max_health",
+			"operation": "multiply_total",
+			"value": 1.5
+		}
+	}
+}

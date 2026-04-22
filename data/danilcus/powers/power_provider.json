@@ -7,6 +7,30 @@
 				"type": "origins:if_else",
 				"condition": {
 					"type": "origins:nbt",
+					"nbt": "{Tags:['dam.natural.giant']}"
+				},
+				"if_action": {
+					"type": "origins:grant_power",
+					"power": "*:natural/giant",
+					"source": "*:danilcus"
+				}
+			},
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:nbt",
+					"nbt": "{Tags:['dam.natural.big']}"
+				},
+				"if_action": {
+					"type": "origins:grant_power",
+					"power": "*:natural/big",
+					"source": "*:danilcus"
+				}
+			},
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:nbt",
 					"nbt": "{Tags:['dam.riding.phantom']}"
 				},
 				"if_action": {
